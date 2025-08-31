@@ -1,0 +1,101 @@
+
+/* Minimal, elegant, architecture-style */
+:root {
+  --bg: #f8f7f4;
+  --text: #111111;
+  --maxw: 980px;
+  --gap: 2rem;
+}
+* {box-sizing: border-box;}
+html,body {height:100%;}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 0.95rem;
+  position: sticky;
+  top: 0;
+  background: transparent;
+  z-index: 10;
+}
+
+header a {
+  margin-left: 1.2rem;
+  text-decoration: none;
+  color: var(--text);
+  opacity: 0.9;
+}
+
+header a:hover {opacity: 1; text-decoration: underline;}
+
+.container {
+  max-width: var(--maxw);
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+h1 {font-weight: 400; margin: 0 0 0.5rem 0; letter-spacing: 0.6px;}
+h2 {font-weight: 400; margin: 0 0 1rem 0;}
+
+.lead {opacity: 0.85; margin-bottom: 2rem;}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--gap);
+  margin-top: 1rem;
+}
+
+.card {
+  padding: 0.4rem;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.card .title {
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+  text-align: left;
+  color: var(--text);
+}
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 2px;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  color: var(--text);
+}
+
+footer { margin: 4rem 0; text-align: center; opacity: 0.7; font-size: 0.9rem; }
+
+/* Mobile adjustments */
+@media (max-width: 700px) {
+  .container {margin: 2rem auto;}
+  header {justify-content: center; gap: 0.6rem; padding: 0.8rem;}
+  header a {margin-left: 0.6rem; font-size: 0.95rem;}
+}
