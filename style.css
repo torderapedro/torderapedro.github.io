@@ -1,7 +1,7 @@
 
-/* Minimal, elegant, architecture-style */
+/* Superminimalista */
 :root {
-  --bg: #f8f7f4;
+  --bg: #fdf0d5; /*Fondo beige*/
   --text: #111111;
   --maxw: 980px;
   --gap: 2rem;
