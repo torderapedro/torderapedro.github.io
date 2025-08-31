@@ -2,7 +2,7 @@
 /* Superminimalista */
 :root {
   --bg: #c1121f; /*Fondo rojo*/
-  --text: #111111;
+  --text: #111111; /* Color negro*/
   --maxw: 980px;
   --gap: 2rem;
 }
@@ -48,7 +48,12 @@ header a:hover {opacity: 1; text-decoration: underline;}
 h1 {font-weight: 400; margin: 0 0 0.5rem 0; letter-spacing: 0.6px;}
 h2 {font-weight: 400; margin: 0 0 1rem 0;}
 
-.lead {opacity: 0.85; margin-bottom: 2rem;}
+.lead {
+  opacity: 0.85;
+  margin-bottom: 2rem;
+  font-style: italic;  /* Cursiva */
+  text-align: justify;  /* Justificado */
+  line-height: 1.6;}
 
 .grid {
   display: grid;
