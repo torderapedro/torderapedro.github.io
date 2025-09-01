@@ -62,7 +62,8 @@ header a:hover {
   justify-content: flex-end; /* Alinea el contenido abajo */
   align-items: flex-start;   /* Alineado a la izquierda */
   padding: 2rem;             /* Espacio interior */
-  margin: 0 auto;            /* Centrado horizontal del container */
+  margin: 0;            /* Centrado horizontal del container */
+  margin-left: 2rem; /* Ajusta según tu gusto */
   text-align: justify;
 }
 
