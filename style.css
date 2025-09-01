@@ -189,7 +189,7 @@ a.button {
 }
 .bar {
   background: #eee;
-  height: 6px;
+  height: 3px;
   /* border-radius: 3px; Borde redondeado de las barras*/ 
   overflow: hidden;
 }
