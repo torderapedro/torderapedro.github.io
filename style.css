@@ -87,7 +87,7 @@ h1  {
 .lead {
   font-size: clamp(0.8rem, 2vw, 1.2rem);
   opacity: 0.85;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   font-style: italic;
   text-align: justify;
   font-weight: 300;
@@ -97,7 +97,7 @@ h1  {
 .home-grid {
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
@@ -222,7 +222,7 @@ a.button {
 /* FOOTER */
 /* ====================================== */
 footer {
-  margin: 4rem 0;
+  margin: 3rem 0;
   text-align: center;
   opacity: 0.7;
   font-size: 0.9rem;
@@ -251,7 +251,7 @@ footer {
 
   .home-container {
     height: auto;           /* quitar height fijo */
-    margin-top: 12rem;       /* permite que se quede abajo */
+    margin-top: 20rem;       /* permite que se quede abajo */
     margin-left: 1rem;      /* alineado a la izquierda */
     margin-right: 1rem;     /* un poco de espacio lateral */
     padding: 1.5rem 1rem;   /* espacio interior */
