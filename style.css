@@ -54,6 +54,16 @@ body {
   flex-shrink: 0;
 }
 
+.home {
+  min-height: 100vh;   /* que ocupe toda la pantalla */
+  padding: 2rem;       /* margen interior para que no quede pegado */
+}
+
+.home-container {
+  max-width: 650px;    /* ancho máximo legible */
+}
+
+
 /* ====================================== */
 /* SUBTÍTULO Y LEAD */
 .subtitle {
