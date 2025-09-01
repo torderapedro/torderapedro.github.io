@@ -190,7 +190,7 @@ a.button {
   overflow: hidden;
 }
 .fill {
-  background: #111;
+  background: #666;
   height: 100%;
   width: 0; /* se define en línea (style="width:70%") */
 }
