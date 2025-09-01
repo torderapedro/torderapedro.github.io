@@ -1,126 +1,126 @@
 /* ====================================== */
 /* VARIABLES GLOBALES */
 :root {
-  --bg: #fafaf8;       /* Fondo principal de la página */
+  --bg: #fafaf8;       /* Fondo principal */
   --text: #111111;     /* Color principal del texto */
   --primary: #2c3e50;  /* Color usado para la línea bajo los títulos */
-  --maxw: 980px;       /* Ancho máximo recomendado para secciones */
+  --maxw: 61.25rem;    /* 980px en rem, ancho máximo recomendado para secciones */
 }
 
 /* ====================================== */
 /* ESTILOS BASE DEL BODY */
+html {
+  font-size: 16px;      /* 1rem = 16px, base para rem */
+}
+
 body {
   font-family: Helvetica, "Helvetica Neue", sans-serif; /* Tipografía principal */
-  background-color: var(--bg); /* Fondo general */
-  color: var(--text);          /* Color del texto */
-  -webkit-font-smoothing: antialiased; /* Suaviza fuentes en WebKit */
-  -moz-osx-font-smoothing: grayscale;  /* Suaviza fuentes en Firefox Mac */
+  background-color: var(--bg);  /* Fondo general */
+  color: var(--text);           /* Color del texto */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ====================================== */
 /* TITULOS DE SECCIÓN CON LÍNEA DEBAJO */
 .cv-section-title {
-  display: block;              /* Se muestra como bloque (línea debajo del texto) */
-  font-size: 0.95rem;          /* Tamaño del texto */
-  font-weight: 700;            /* Grosor de la fuente */
-  text-transform: uppercase;   /* Todo en mayúsculas */
-  letter-spacing: 0.4px;       /* Espacio entre letras */
-  color: #333;                 /* Color del título */
-  margin: 2rem 0 1rem;         /* Margen arriba y abajo */
-  position: relative;          /* Necesario para pseudo-elementos */
+  display: block;
+  font-size: 0.95rem;       /* Tamaño relativo al root */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025rem; /* Aproximadamente 0.4px */
+  color: #333;
+  margin: 1.25rem 0 0.625rem; /* 20px arriba, 10px abajo en rem */
+  position: relative;
 }
 
 /* Línea horizontal bajo el título */
 .cv-section-title::after {
-  content: "";                 /* Elemento vacío */
-  display: block;              /* Se comporta como bloque */
-  width: 100%;                 /* Ocupa todo el ancho del contenedor */
-  height: 1px;                 /* Grosor de la línea */
-  background: var(--primary);  /* Color de la línea */
-  margin-top: 0.3rem;          /* Separación entre texto y línea */
+  content: "";
+  display: block;
+  width: 100%;               /* Línea ocupa todo el ancho del contenedor */
+  height: 0.0625rem;         /* 1px en rem */
+  background: var(--primary);
+  margin-top: 0.1875rem;     /* 3px en rem */
 }
 
 /* ====================================== */
 /* CUADRADO NEGRO ANTE EL TÍTULO PRINCIPAL */
 .title-square {
-  width: 20px;                  /* Ancho del cuadrado */
-  height: 20px;                 /* Alto del cuadrado */
-  background-color: #000;       /* Color negro */
-  margin-right: 0.75rem;        /* Espacio entre cuadrado y texto */
-  flex-shrink: 0;               /* Evita que se reduzca al encoger la columna */
+  width: 1.25rem;            /* 20px */
+  height: 1.25rem;           /* 20px */
+  background-color: #000;
+  margin-right: 0.46875rem;  /* 7.5px */
+  flex-shrink: 0;
 }
 
 /* ====================================== */
-/* SUBTÍTULO Y LEAD (INTRODUCCIÓN) */
+/* SUBTÍTULO Y LEAD */
 .subtitle {
-  font-size: 1.5rem;           /* Tamaño del subtítulo */
-  font-weight: 400;            /* Grosor normal */
-  color: var(--text);          /* Color del texto */
-  margin-bottom: 0.25rem;      /* Espacio debajo del subtítulo */
+  font-size: 1.5rem;         /* Escalable */
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.25rem;
 }
 
-/* Texto principal de presentación */
 .lead {
-  opacity: 0.85;               /* Ligeramente transparente */
-  font-style: italic;          /* Texto en cursiva */
-  line-height: 1.6;            /* Espaciado entre líneas */
-  font-weight: 300;            /* Grosor ligero */
-  text-align: justify;         /* Justificado para un bloque uniforme */
-  margin-bottom: 2rem;         /* Margen inferior para separar de botones */
+  opacity: 0.85;
+  font-style: italic;
+  line-height: 1.6;
+  font-weight: 300;
+  text-align: justify;
+  margin-bottom: 2rem;       /* 32px = 2rem */
 }
 
 /* ====================================== */
-/* SKILLS (BARRAS DE HABILIDADES) */
+/* SKILLS */
 .skill {
-  margin-bottom: 0.9rem;       /* Espacio entre cada skill */
+  margin-bottom: 0.5625rem;  /* 9px */
 }
 
 .skill span {
-  display: block;              /* Cada nombre en línea nueva */
-  font-size: 0.75rem;          /* Tamaño del texto pequeño */
-  margin-bottom: 0.35rem;      /* Espacio entre nombre y barra */
-  color: #666;                 /* Color gris para el texto secundario */
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.21875rem; /* 3.5px */
+  color: #666;
 }
 
-/* Contenedor de la barra */
 .bar {
-  background: #eee;            /* Fondo de la barra */
-  height: 4.5px;               /* Altura de la barra */
-  border-radius: 0px;          /* Bordes rectos */
-  overflow: hidden;            /* Recorta el relleno si se anima */
+  background: #eee;
+  height: 0.28125rem;        /* 4.5px */
+  border-radius: 0;
+  overflow: hidden;
 }
 
-/* Relleno de la barra que indica nivel */
 .fill {
-  background: #666;            /* Color de la habilidad */
-  height: 100%;                /* Ocupa toda la altura de la barra */
-  width: 0;                     /* Se define en línea con style="width:70%" */
+  background: #666;
+  height: 100%;
+  width: 0;                  /* Se define inline */
 }
 
 /* ====================================== */
 /* GRID DEL CV (2 COLUMNAS) */
 .cv-page {
-  max-width: 1100px;           /* Ancho máximo de la página */
-  margin: 0 auto;              /* Centrado horizontal */
-  padding: 2rem 1rem;          /* Espacio alrededor */
+  max-width: 68.75rem;       /* 1100px en rem */
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 .cv-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Columna principal más grande, lateral más estrecha */
-  gap: 3rem;                      /* Espacio entre columnas */
+  grid-template-columns: 2fr 1fr;
+  gap: 1.875rem;             /* 30px en rem */
 }
 
-/* Columnas internas */
 .cv-main, .cv-aside {
-  min-width: 0; /* Evita que el contenido salga del contenedor */
+  min-width: 0;
 }
 
 /* Responsive: pasa a 1 columna en pantallas pequeñas */
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) { /* 900px */
   .cv-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.25rem;             /* 20px */
   }
 }
 
@@ -128,35 +128,33 @@ body {
 /* FILAS DE CV: FECHA + DESCRIPCIÓN */
 .cv-row {
   display: grid;
-  grid-template-columns: 140px 1fr; /* Fecha a la izquierda, descripción a la derecha */
-  column-gap: 1.2rem;               /* Separación entre columnas */
-  padding: 0.6rem 0;                 /* Espacio vertical entre filas */
+  grid-template-columns: 8.75rem 1fr; /* 140px en rem = 8.75rem */
+  column-gap: 0.75rem;                /* 12px */
+  padding: 0.0375rem 0;               /* 0.6px? Ajustable si quieres */
 }
 
-/* Fecha */
 .cv-date {
-  text-align: right;                /* Alineada a la derecha */
+  text-align: right;
   font-family: "Helvetica Condensed", Helvetica, sans-serif;
-  font-weight: 300;                 /* Ligero */
-  color: #666;                      /* Gris suave */
-  font-size: 0.88rem;               /* Tamaño pequeño */
+  font-weight: 300;
+  color: #666;
+  font-size: 0.55rem;                   /* 0.88px/16? Quizá ajusta */
 }
 
-/* Descripción */
 .cv-desc {
-  text-align: justify;              /* Texto justificado */
-  color: #666;                      /* Gris secundario */
-  font-size: 0.95rem;               /* Tamaño normal */
-  line-height: 1.6;                 /* Espaciado entre líneas */
+  text-align: justify;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /* ====================================== */
 /* BOTÓN DE DESCARGA DEL CV */
 .cv-download .btn {
   text-decoration: none;
-  padding: 0.45rem 0.8rem;          /* Espacio interno */
-  border: 1px solid rgba(0,0,0,0.15);
-  border-radius: 2px;
+  padding: 0.28125rem 0.5rem;           /* 4.5px x 8px */
+  border: 0.0625rem solid rgba(0,0,0,0.15); /* 1px */
+  border-radius: 0.125rem;               /* 2px */
   color: var(--text);
   font-size: 0.95rem;
 }
@@ -164,9 +162,8 @@ body {
 /* ====================================== */
 /* FOOTER */
 footer {
-  margin: 4rem 0;                    /* Separación arriba y abajo */
-  text-align: center;                /* Centrado */
-  opacity: 0.7;                      /* Transparencia ligera */
-  font-size: 0.9rem;                 /* Tamaño de texto reducido */
+  margin: 4rem 0;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 0.9rem;
 }
-
