@@ -1,7 +1,7 @@
 
 /* Superminimalista */
 :root {
-  --bg: #ddd8c4; /*Fondo beige*/
+  --bg: #f4f4f4; /*Fondo Blanco Roto*/
   --text: #111111; /* Color negro*/
   --maxw: 980px;
   --gap: 2rem;
@@ -9,7 +9,7 @@
 * {box-sizing: border-box;}
 html,body {height:100%;}
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Helvetica Neue, sans-serif;
   background-color: var(--bg);
   color: var(--text);
   margin: 0;
@@ -28,7 +28,7 @@ header {
   font-size: 0.95rem;
   position: sticky;
   top: 0;
-  background: #fff;          /* pon blanco o el mismo fondo que uses */
+  background: #f4f4f4;          /* Color banda de arriba */
   z-index: 10;
 }
 
