@@ -1,115 +1,118 @@
-
-/* Superminimalista */
+/* ====================================== */
+/* VARIABLES GLOBALES Y RESET */
+/* ====================================== */
 :root {
-  --bg: #fafaf8; /*Fondo Blanco Roto*/
-  --text: #111111; /* Color negro*/
-  --maxw: 980px;
-  --gap: 2rem;
+  --bg: #fafaf8;         /* Fondo blanco roto */
+  --text: #111111;       /* Texto principal */
+  --primary: #2c3e50;    /* Color acento (líneas, títulos, etc.) */
+  --maxw: 61.25rem;      /* 980px -> ancho máximo */
+  --gap: 2rem;           /* Espaciado base */
 }
-* {box-sizing: border-box;}
-html,body {height:100%;}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
 body {
-  font-family: Helvetica, Helvetica Neue, sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
   margin: 0;
   padding: 0;
+  font-family: Helvetica, "Helvetica Neue", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ==== MENÚ SUPERIOR ==== */
+/* ====================================== */
+/* MENÚ SUPERIOR */
+/* ====================================== */
 header {
   display: flex;
-  justify-content: flex-end; /* Siempre a la derecha */
+  justify-content: flex-end; /* Menú alineado a la derecha */
   align-items: center;
-  gap: 1.5rem;               /* Separación limpia entre enlaces */
+  gap: 1.5rem;
   padding: 1rem 2rem;
   font-size: 0.95rem;
   position: sticky;
   top: 0;
-  background: #fafaf8;          /* Color banda de arriba */
+  background: var(--bg);
   z-index: 10;
-}
-
-/* ==== INICIO ==== */
-
-/* Contenedor central */
-.home-container {
-  max-width: 650px;       /* Ancho máximo de la columna */
-  margin-top: 200px;         /* Más margen arriba y Centra horizontalmente */
-  margin-left: 80px;      /* Lo mueve un poco a la izquierda*/
-  padding: 0rem 2rem;     /* Aire alrededor */
-  text-align: justify;     /* Centra el texto */
-  display: flex;
-  flex-direction: column; /* Columna */
-  align-items: flex-start;    /* Alinea los elementos a la columna */
 }
 
 header a {
   text-decoration: none;
-  color: var(--text, #111);  /* Por si var(--text) no está definido */
+  color: var(--text);
   font-weight: 400;
   opacity: 0.85;
   transition: opacity 0.2s ease;
 }
-
 header a:hover {
   opacity: 1;
   text-decoration: underline;
 }
 
-/* Título principal*/
-h1  {
+/* ====================================== */
+/* HOME / INICIO */
+/* ====================================== */
+.home-container {
+  max-width: 650px;
+  margin: 200px auto 0 auto; /* centrado horizontal y margen arriba */
+  padding: 0 2rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Títulos */
+h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 0rem;
-  color: #111111;
+  margin-bottom: 0;
+  color: var(--text);
 }
- 
-/* Subtítulo*/
 .subtitle {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #111111;
   margin-bottom: 0.25rem;
+  color: var(--text);
 }
 
-/*Texto de introducción*/
+/* Texto introductorio */
 .lead {
   opacity: 0.85;
   margin-bottom: 2rem;
-  font-style: italic;  /* Cursiva */
-  text-align: justify;  /* Justificado */
-  line-height: 1.6;
+  font-style: italic;
+  text-align: justify;
   font-weight: 300;
 }
 
-/*Botones inicio*/
-
+/* Botones en inicio */
 .home-grid {
   display: flex;
-  gap: 1rem;             /* Espacio entre botones */
+  gap: 1rem;
   margin-top: 2rem;
-  align-self: center; /* Centra los botones horizontalmente */
-  flex-wrap: wrap;         /* Bajan si no caben */
-  width: max-content;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 2px;
+  font-size: 0.95rem;
+  color: var(--text);
 }
 
+/* ====================================== */
+/* GRID DE CARDS (Portfolio o Blog) */
+/* ====================================== */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: var(--gap);
   margin-top: 1rem;
-}
-
-.home-card { /*Botones del inicio*/
-  background: transparent;
-  display: flex;
-  flex-direction: row;
-  font-weight: 700;
-  gap: 0.6rem;
-  align-items: center;
 }
 
 .card {
@@ -119,34 +122,21 @@ h1  {
   font-weight: 700;
   gap: 0.6rem;
 }
-
 .card img {
   width: 100%;
   height: auto;
-  display: block;
   object-fit: cover;
   border-radius: 2px;
 }
-
 .card .title {
   font-size: 0.95rem;
-  margin-top: 0.2rem;
   text-align: left;
   color: var(--text);
 }
 
-a.button {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.5rem 0.9rem;
-  border: 0px solid rgba(0,0,0,0.08);
-  border-radius: 0px;
-  font-size: 0.95rem;
-  margin-top: 1rem;
-  color: var(--text);
-}
-
-/* ==== Página CV: layout en GRID (2 columnas) ==== */
+/* ====================================== */
+/* PÁGINA CV */
+/* ====================================== */
 .cv-page {
   max-width: 1100px;
   margin: 0 auto;
@@ -155,82 +145,52 @@ a.button {
 
 .cv-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;    /* izquierda grande, derecha estrecha */
+  grid-template-columns: 2fr 1fr; /* izquierda ancha, derecha estrecha */
   gap: 3rem;
 }
+.cv-main, .cv-aside { min-width: 0; }
 
-/* Responsive: en móvil pasa a 1 columna */
-@media (max-width: 900px) {
-  .cv-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
-
-/* Columnas */
-.cv-main { min-width: 0; }   /* Evita desbordes en grid */
-.cv-aside { min-width: 0; }
-
-/* ==== Títulos con línea separadora ==== */
+/* Títulos de secciones */
 .cv-section-title {
-  display: block;                  /* La línea queda debajo */
-  font-size: 0.95rem;              /* Tamaño de texto */
-  font-weight: 700;                /* Grosor del texto */
-  text-transform: uppercase;     /* Todo mayúsculas */
-  letter-spacing: 0.4px;           /* Espacio entre letras */
-  color: #333;                     /* Color del texto */
-  margin: 2rem 0 1rem;             /* Márgenes */
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #333;
+  margin: 2rem 0 1rem;
   position: relative;
 }
-
 .cv-section-title::after {
   content: "";
   display: block;
-  width: 100%;                     /* Línea bajo el título, es la longitud de la columna en la que está */
-  height: 1px;                     /* Grosor de la línea */
-  background: #2c3e50;             /* Color de la línea */
-  margin-top: 0.3rem;              /* Separación entre texto y línea */
+  width: 100%;
+  height: 1px;
+  background: var(--primary);
+  margin-top: 0.3rem;
 }
 
-
-/* ==== Filas de CV: fecha + descripción en 2 columnas ==== */
+/* Filas de experiencia */
 .cv-row {
   display: grid;
   grid-template-columns: 140px 1fr; /* fecha | contenido */
   column-gap: 1.2rem;
   padding: 0.6rem 0;
 }
-
 .cv-date {
-  text-align: right;  /* Alineación a la derecha */
-  font-family: "Helvetica Condensed", "Helvetica", sans-serif;
-  font-weight: 300; /* Light */
-  color: #666;
+  text-align: right;
+  font-weight: 300;
   font-size: 0.88rem;
-}
-
-.cv-desc {
-  text-align: justify;  /* Justificado */
   color: #666;
+}
+.cv-desc {
+  text-align: justify;
   font-size: 0.95rem;
   line-height: 1.6;
+  color: #666;
 }
 
-/* Opcional: línea sutil entre items
-.cv-row + .cv-row { border-top: 1px solid #eee; }
-*/
-
-/* ==== Botón descarga ==== */
-.cv-download .button {
-  text-decoration: none;
-  padding: 0.45rem 0.8rem;
-  border: 1px solid rgba(0,0,0,0.15);
-  border-radius: 2px;
-  color: #111;
-  font-size: 0.95rem;
-}
-
-/* ==== Skills (barras) ==== */
+/* Skills */
 .skill { margin-bottom: 0.9rem; }
 .skill span {
   display: block;
@@ -241,21 +201,49 @@ a.button {
 .bar {
   background: #eee;
   height: 4.5px;
-  border-radius: 0px; /*Borde redondeado de las barras*/
+  border-radius: 0;
   overflow: hidden;
 }
 .fill {
   background: #666;
   height: 100%;
-  width: 0; /* Se define en línea (style="width:70%") */
+  width: 0; /* Se asigna inline con style="width:70%" */
 }
 
+/* ====================================== */
+/* FOOTER */
+/* ====================================== */
+footer {
+  margin: 4rem 0;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
 
-footer { margin: 4rem 0; text-align: center; opacity: 0.7; font-size: 0.9rem; }
+/* ====================================== */
+/* MEDIA QUERIES (Responsive) */
+/* ====================================== */
 
-/* Mobile adjustments */
+/* Tablets y móviles grandes */
+@media (max-width: 900px) {
+  .cv-grid {
+    grid-template-columns: 1fr; /* CV a una sola columna */
+    gap: 2rem;
+  }
+}
+
+/* Móviles */
 @media (max-width: 700px) {
-  .container {margin: 2rem auto;}
-  header {justify-content: center; gap: 0.6rem; padding: 0.8rem;}
-  header a {margin-left: 0.6rem; font-size: 0.95rem;}
+  header {
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.8rem;
+  }
+  header a { font-size: 0.9rem; }
+  .home-container {
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+  }
 }
