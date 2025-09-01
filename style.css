@@ -68,7 +68,7 @@ header a:hover {
 
 /* Título principal */
 h1  {
-  font-size: clamp(1.5rem, 4vw, 2.5rem); 
+  font-size: clamp(1.2rem, 3vw, 2.5rem); 
   font-weight: 700;
   margin: 0;
   color: #111111;
@@ -76,7 +76,7 @@ h1  {
 
 /* Subtítulo */
 .subtitle {
-  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 400;
   color: #111111;
   margin: 0.2rem 0 0.5rem 0; /* Ajustado separación con título y texto */
@@ -85,6 +85,7 @@ h1  {
 
 /* Texto introductorio */
 .lead {
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
   opacity: 0.85;
   margin-bottom: 2rem;
   font-style: italic;
