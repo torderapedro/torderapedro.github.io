@@ -95,6 +95,69 @@ a.button {
   color: var(--text);
 }
 
+/* ===== CV Layout ===== */
+.cv-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cv-left {
+  flex: 2;
+  min-width: 300px;
+}
+
+.cv-right {
+  flex: 1;
+  min-width: 220px;
+}
+
+.cv-left h2,
+.cv-right h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+}
+
+.cv-item {
+  margin-bottom: 1.5rem;
+}
+
+.cv-date {
+  font-size: 0.85rem;
+  color: #666;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+/* ===== Skills / Idiomas ===== */
+.skill {
+  margin-bottom: 1rem;
+}
+
+.skill span {
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.bar {
+  background: #eee;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.fill {
+  background: #111;
+  height: 100%;
+}
+
 footer { margin: 4rem 0; text-align: center; opacity: 0.7; font-size: 0.9rem; }
 
 /* Mobile adjustments */
