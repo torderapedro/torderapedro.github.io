@@ -37,7 +37,7 @@ header {
 /* Contenedor central */
 .home-container {
   max-width: 650px;       /* Ancho máximo de la columna */
-  margin-top: 100px auto 0 auto;         /* Más margen arriba y Centra horizontalmente */
+  margin-top: 800px;         /* Más margen arriba y Centra horizontalmente */
   margin-left: 80px;      /* Lo mueve un poco a la izquierda*/
   padding: 0rem 2rem;     /* Aire alrededor */
   text-align: justify;     /* Centra el texto */
