@@ -85,7 +85,7 @@ h1  {
 
 /* Texto introductorio */
 .lead {
-  font-size: clamp(0.8rem, 3vw, 1.2rem);
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
   opacity: 0.85;
   margin-bottom: 2rem;
   font-style: italic;
