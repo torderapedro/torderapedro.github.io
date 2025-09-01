@@ -235,6 +235,7 @@ a.button {
   display: block;
   font-size: 0.75rem;
   margin-bottom: 0.35rem;
+  color: #666;
 }
 .bar {
   background: #eee;
