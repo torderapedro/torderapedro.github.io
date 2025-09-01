@@ -21,9 +21,9 @@ body {
 /* ==== MENÚ SUPERIOR ==== */
 header {
   display: flex;
-  justify-content: flex-end; /* siempre a la derecha */
+  justify-content: flex-end; /* Siempre a la derecha */
   align-items: center;
-  gap: 1.5rem;               /* separación limpia entre enlaces */
+  gap: 1.5rem;               /* Separación limpia entre enlaces */
   padding: 1rem 2rem;
   font-size: 0.95rem;
   position: sticky;
@@ -36,14 +36,14 @@ header {
 
 /* Contenedor central */
 .home-container {
-  max-width: 700px;       /* Ancho máximo de la columna */
-  margin: 0 auto;         /* Centra horizontalmente */
+  max-width: 650px;       /* Ancho máximo de la columna */
+  margin: 6rem auto 0 auto;         /* Más margen arriba y Centra horizontalmente */
   margin-left: 80px;      /* Lo mueve un poco a la izquierda*/
-  padding: 4rem 2rem;     /* Aire alrededor */
-  text-align: center;     /* Centra el texto */
+  padding: 0rem 2rem;     /* Aire alrededor */
+  text-align: justify;     /* Centra el texto */
   display: flex;
   flex-direction: column; /* Columna */
-  align-items: center;    /* Asegura alineación en el centro */
+  align-items: flex-start;    /* Alinea los elementos a la columna */
 }
 
 header a {
@@ -63,13 +63,14 @@ header a:hover {
 h1  {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
+  color: #111111;
 }
  /* Subtítulo*/
 .subtitle {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #555;
+  color: #111111;
   margin-bottom: 1.5rem;
 }
   
@@ -79,6 +80,7 @@ h1  {
   font-style: italic;  /* Cursiva */
   text-align: justify;  /* Justificado */
   line-height: 1.6;
+  font-weight: 300;
 }
 
 .grid {
