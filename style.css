@@ -89,7 +89,7 @@ h1  {
 
 .home-grid {
   display: flex;
-  gap: 2rem;             /* Espacio entre botones */
+  gap: 1rem;             /* Espacio entre botones */
   margin-top: 2rem;
   justify-content: center; /* Centra los botones horizontalmente */
   flex-wrap: wrap;         /* Bajan si no caben */
