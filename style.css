@@ -118,15 +118,15 @@ a.button {
 }
 
 /* Columnas */
-.cv-main { min-width: 0; }   /* evita desbordes en grid */
+.cv-main { min-width: 0; }   /* Evita desbordes en grid */
 .cv-aside { min-width: 0; }
 
-/* ==== Títulos con línea separadora (como la imagen) ==== */
+/* ==== Títulos con línea separadora ==== */
 .cv-section-title {
   display: block;                  /* La línea queda debajo */
   font-size: 0.95rem;              /* Tamaño de texto */
-  font-weight: 600;                /* Grosor del texto */
-  /*text-transform: uppercase;     /* Todo mayúsculas */
+  font-weight: 700;                /* Grosor del texto */
+  text-transform: uppercase;     /* Todo mayúsculas */
   letter-spacing: 0.4px;           /* Espacio entre letras */
   color: #333;                     /* Color del texto */
   margin: 2rem 0 1rem;             /* Márgenes */
@@ -189,8 +189,8 @@ a.button {
 }
 .bar {
   background: #eee;
-  height: 3px;
-  border-radius: 0px; Borde redondeado de las barras
+  height: 4.5px;
+  border-radius: 0px; /*Borde redondeado de las barras*/
   overflow: hidden;
 }
 .fill {
