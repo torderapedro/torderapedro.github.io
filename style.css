@@ -32,9 +32,22 @@ header {
   z-index: 10;
 }
 
+/* ==== INICIO ==== */
+
+/* Contenedor central */
+.container {
+  max-width: 700px;       /* Ancho máximo de la columna */
+  margin: 0 auto;         /* Centra horizontalmente */
+  padding: 4rem 2rem;     /* Aire alrededor */
+  text-align: center;     /* Centra el texto */
+  display: flex;
+  flex-direction: column; /* Columna */
+  align-items: center;    /* Asegura alineación en el centro */
+}
+
 header a {
   text-decoration: none;
-  color: var(--text, #111);  /* por si var(--text) no está definido */
+  color: var(--text, #111);  /* Por si var(--text) no está definido */
   font-weight: 400;
   opacity: 0.85;
   transition: opacity 0.2s ease;
@@ -45,9 +58,18 @@ header a:hover {
   text-decoration: underline;
 }
 
-
-h1 {font-weight: 400; margin: 0 0 0.5rem 0; letter-spacing: 0.6px;}
-h2 {font-weight: 400; margin: 0 0 1rem 0;}
+/* Título principal*/
+h1  {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+ /* Subtítulo*/
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 1.5rem;
 
 .lead {
   opacity: 0.85;
