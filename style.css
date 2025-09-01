@@ -61,7 +61,7 @@ header a:hover {
   justify-content: flex-end; /* Alinea el contenido abajo */
   align-items: flex-start;   /* Alineado a la izquierda */
   padding: 2rem;             /* Espacio interior */
-  margin: 0;                 /* Centrado horizontal del container */
+  margin-top: 5rem;                 /* Centrado horizontal del container */
   margin-left: 2rem;         /* Ajusta según tu gusto */
   text-align: justify;
 }
@@ -251,7 +251,7 @@ footer {
 
   .home-container {
     height: auto;           /* quitar height fijo */
-    margin-top: 5rem;       /* permite que se quede abajo */
+    margin-top: 7rem;       /* permite que se quede abajo */
     margin-left: 1rem;      /* alineado a la izquierda */
     margin-right: 1rem;     /* un poco de espacio lateral */
     padding: 1.5rem 1rem;   /* espacio interior */
