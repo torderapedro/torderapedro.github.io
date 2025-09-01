@@ -35,9 +35,10 @@ header {
 /* ==== INICIO ==== */
 
 /* Contenedor central */
-.container {
+.home-container {
   max-width: 700px;       /* Ancho máximo de la columna */
   margin: 0 auto;         /* Centra horizontalmente */
+  margin-left: 80px;      /* Lo mueve un poco a la izquierda*/
   padding: 4rem 2rem;     /* Aire alrededor */
   text-align: center;     /* Centra el texto */
   display: flex;
