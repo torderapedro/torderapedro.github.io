@@ -1,25 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Curriculum — Nombre Apellido</title>
-  <meta name="description" content="CV — Nombre Apellido.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum Vitae</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <a href="index.html">Inicio</a>
-    <a href="cv.html">Curriculum</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="blog.html">Blog</a>
-    <a href="cv-en.html">EN</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cv.html" class="active">CV</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
   </header>
-  <main class="container">
-    <h1>Curriculum Vitae</h1>
-    <p>[Aquí redactas tu CV en texto: educación, experiencia, habilidades...]</p>
-    <p><a href="assets/cv.pdf" download>Descargar CV (PDF)</a></p>
+
+  <main class="cv-container">
+
+    <!-- Columna izquierda -->
+    <div class="cv-left">
+      <section>
+        <h2>Formación Académica</h2>
+        <div class="cv-item">
+          <span class="cv-date">10/2023 – 07/2025</span>
+          <p><strong>Máster Universitario en Arquitectura</strong><br>
+          ETSAS, Universidad de Sevilla</p>
+        </div>
+        <div class="cv-item">
+          <span class="cv-date">09/2018 – 07/2023</span>
+          <p><strong>Grado en Fundamentos de la Arquitectura</strong><br>
+          ETSAS, Universidad de Sevilla</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experiencia y Formación Complementaria</h2>
+        <div class="cv-item">
+          <span class="cv-date">01/2023 – 08/2023</span>
+          <p><strong>Diseño y montaje de prototipos mobiliarios. Workshop BIBLIOKEPOS</strong><br>
+          Escuela Técnica Superior de Arquitectura de Sevilla. ISBN 978-84-19600-91-5</p>
+        </div>
+        <div class="cv-item">
+          <span class="cv-date">02/2024 – 04/2024</span>
+          <p><strong>Curso “Architecture, city and culture in East Asia. China versus Japan”</strong><br>
+          Ulysseus European University, Universidad de Sevilla</p>
+        </div>
+        <div class="cv-item">
+          <span class="cv-date">05/2022</span>
+          <p><strong>Participación en concurso Rockwool. Rehabilitación energética</strong><br>
+          VIII Edición por Grupo Puma</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="cv-right">
+      <section>
+        <h2>Idiomas</h2>
+        <div class="skill">
+          <span>Español</span>
+          <div class="bar"><div class="fill" style="width:100%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Inglés B1</span>
+          <div class="bar"><div class="fill" style="width:60%"></div></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="skill">
+          <span>AutoCAD</span>
+          <div class="bar"><div class="fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Illustrator</span>
+          <div class="bar"><div class="fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Photoshop</span>
+          <div class="bar"><div class="fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Revit</span>
+          <div class="bar"><div class="fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill">
+          <span>SketchUp</span>
+          <div class="bar"><div class="fill" style="width:70%"></div></div>
+        </div>
+      </section>
+    </div>
+
   </main>
-  <footer>© Nombre Apellido</footer>
+
 </body>
 </html>
