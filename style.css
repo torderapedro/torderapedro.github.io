@@ -28,7 +28,7 @@ header {
   font-size: 0.95rem;
   position: sticky;
   top: 0;
-  background: #f4f4f4;          /* Color banda de arriba */
+  background: ##fafaf8;          /* Color banda de arriba */
   z-index: 10;
 }
 
