@@ -71,13 +71,15 @@ h1  {
   font-weight: 400;
   color: #555;
   margin-bottom: 1.5rem;
-
+}
+  
 .lead {
   opacity: 0.85;
   margin-bottom: 2rem;
   font-style: italic;  /* Cursiva */
   text-align: justify;  /* Justificado */
-  line-height: 1.6;}
+  line-height: 1.6;
+}
 
 .grid {
   display: grid;
