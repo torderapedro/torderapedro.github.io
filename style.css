@@ -152,7 +152,8 @@ a.button {
 }
 
 .cv-date {
-  font-family: "Helvetica Neue 67 Media comprimida", "Helvetica", sans-serif;
+  text-align: right;  /* Alineación a la derecha */
+  font-family: "Helvetica Condensed", "Helvetica", sans-serif;
   font-weight: 300; /* Light */
   color: #666;
   font-size: 0.88rem;
