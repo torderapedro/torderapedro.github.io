@@ -1,179 +1,261 @@
-/* ====================================== */
-/* VARIABLES GLOBALES */
+
+/* Superminimalista */
 :root {
-  --bg: #fafaf8;       /* Fondo principal */
-  --text: #111111;     /* Color principal del texto */
-  --primary: #2c3e50;  /* Color usado para la línea bajo los títulos */
-  --maxw: 61.25rem;    /* 980px en rem, ancho máximo recomendado para secciones */
+  --bg: #fafaf8; /*Fondo Blanco Roto*/
+  --text: #111111; /* Color negro*/
+  --maxw: 980px;
+  --gap: 2rem;
 }
-
-/* ====================================== */
-/* ESTILOS BASE DEL BODY */
-html {
-  font-size: 16px;      /* 1rem = 16px, base para rem */
-}
-
+* {box-sizing: border-box;}
+html,body {height:100%;}
 body {
-  font-family: Helvetica, "Helvetica Neue", sans-serif; /* Tipografía principal */
-  background-color: var(--bg);  /* Fondo general */
-  color: var(--text);           /* Color del texto */
+  font-family: Helvetica, Helvetica Neue, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ====================================== */
-/* TITULOS DE SECCIÓN CON LÍNEA DEBAJO */
-.cv-section-title {
-  display: block;
-  font-size: 0.95rem;       /* Tamaño relativo al root */
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.025rem; /* Aproximadamente 0.4px */
-  color: #333;
-  margin: 1.25rem 0 0.625rem; /* 20px arriba, 10px abajo en rem */
-  position: relative;
+/* ==== MENÚ SUPERIOR ==== */
+header {
+  display: flex;
+  justify-content: flex-end; /* Siempre a la derecha */
+  align-items: center;
+  gap: 1.5rem;               /* Separación limpia entre enlaces */
+  padding: 1rem 2rem;
+  font-size: 0.95rem;
+  position: sticky;
+  top: 0;
+  background: #fafaf8;          /* Color banda de arriba */
+  z-index: 10;
 }
 
-/* Línea horizontal bajo el título */
-.cv-section-title::after {
-  content: "";
-  display: block;
-  width: 100%;               /* Línea ocupa todo el ancho del contenedor */
-  height: 0.0625rem;         /* 1px en rem */
-  background: var(--primary);
-  margin-top: 0.1875rem;     /* 3px en rem */
-}
+/* ==== INICIO ==== */
 
-/* ====================================== */
-/* CUADRADO NEGRO ANTE EL TÍTULO PRINCIPAL */
-.title-square {
-  width: 1.25rem;            /* 20px */
-  height: 1.25rem;           /* 20px */
-  background-color: #000;
-  margin-right: 0.46875rem;  /* 7.5px */
-  flex-shrink: 0;
-}
-
-.home {
-  min-height: 100vh;   /* que ocupe toda la pantalla */
-  padding: 2rem;       /* margen interior para que no quede pegado */
-}
-
+/* Contenedor central */
 .home-container {
-  max-width: 650px;    /* ancho máximo legible */
+  max-width: 650px;       /* Ancho máximo de la columna */
+  margin-top: 200px;         /* Más margen arriba y Centra horizontalmente */
+  margin-left: 80px;      /* Lo mueve un poco a la izquierda*/
+  padding: 0rem 2rem;     /* Aire alrededor */
+  text-align: justify;     /* Centra el texto */
+  display: flex;
+  flex-direction: column; /* Columna */
+  align-items: flex-start;    /* Alinea los elementos a la columna */
 }
 
-
-/* ====================================== */
-/* SUBTÍTULO Y LEAD */
-.subtitle {
-  font-size: 1.5rem;         /* Escalable */
+header a {
+  text-decoration: none;
+  color: var(--text, #111);  /* Por si var(--text) no está definido */
   font-weight: 400;
-  color: var(--text);
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+header a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Título principal*/
+h1  {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0rem;
+  color: #111111;
+}
+ 
+/* Subtítulo*/
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #111111;
   margin-bottom: 0.25rem;
 }
 
+/*Texto de introducción*/
 .lead {
   opacity: 0.85;
-  font-style: italic;
+  margin-bottom: 2rem;
+  font-style: italic;  /* Cursiva */
+  text-align: justify;  /* Justificado */
   line-height: 1.6;
   font-weight: 300;
-  text-align: justify;
-  margin-bottom: 2rem;       /* 32px = 2rem */
 }
 
-/* ====================================== */
-/* SKILLS */
-.skill {
-  margin-bottom: 0.5625rem;  /* 9px */
+/*Botones inicio*/
+
+.home-grid {
+  display: flex;
+  gap: 1rem;             /* Espacio entre botones */
+  margin-top: 2rem;
+  align-self: center; /* Centra los botones horizontalmente */
+  flex-wrap: wrap;         /* Bajan si no caben */
+  width: max-content;
 }
 
-.skill span {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--gap);
+  margin-top: 1rem;
+}
+
+.home-card { /*Botones del inicio*/
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.card {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  gap: 0.6rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
   display: block;
-  font-size: 0.75rem;
-  margin-bottom: 0.21875rem; /* 3.5px */
-  color: #666;
+  object-fit: cover;
+  border-radius: 2px;
 }
 
-.bar {
-  background: #eee;
-  height: 0.28125rem;        /* 4.5px */
-  border-radius: 0;
-  overflow: hidden;
+.card .title {
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+  text-align: left;
+  color: var(--text);
 }
 
-.fill {
-  background: #666;
-  height: 100%;
-  width: 0;                  /* Se define inline */
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  border: 0px solid rgba(0,0,0,0.08);
+  border-radius: 0px;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  color: var(--text);
 }
 
-/* ====================================== */
-/* GRID DEL CV (2 COLUMNAS) */
+/* ==== Página CV: layout en GRID (2 columnas) ==== */
 .cv-page {
-  max-width: 68.75rem;       /* 1100px en rem */
+  max-width: 1100px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
 .cv-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1.875rem;             /* 30px en rem */
+  grid-template-columns: 2fr 1fr;    /* izquierda grande, derecha estrecha */
+  gap: 3rem;
 }
 
-.cv-main, .cv-aside {
-  min-width: 0;
-}
-
-/* Responsive: pasa a 1 columna en pantallas pequeñas */
-@media (max-width: 56.25rem) { /* 900px */
+/* Responsive: en móvil pasa a 1 columna */
+@media (max-width: 900px) {
   .cv-grid {
     grid-template-columns: 1fr;
-    gap: 1.25rem;             /* 20px */
+    gap: 2rem;
   }
 }
 
-/* ====================================== */
-/* FILAS DE CV: FECHA + DESCRIPCIÓN */
+/* Columnas */
+.cv-main { min-width: 0; }   /* Evita desbordes en grid */
+.cv-aside { min-width: 0; }
+
+/* ==== Títulos con línea separadora ==== */
+.cv-section-title {
+  display: block;                  /* La línea queda debajo */
+  font-size: 0.95rem;              /* Tamaño de texto */
+  font-weight: 700;                /* Grosor del texto */
+  text-transform: uppercase;     /* Todo mayúsculas */
+  letter-spacing: 0.4px;           /* Espacio entre letras */
+  color: #333;                     /* Color del texto */
+  margin: 2rem 0 1rem;             /* Márgenes */
+  position: relative;
+}
+
+.cv-section-title::after {
+  content: "";
+  display: block;
+  width: 100%;                     /* Línea bajo el título, es la longitud de la columna en la que está */
+  height: 1px;                     /* Grosor de la línea */
+  background: #2c3e50;             /* Color de la línea */
+  margin-top: 0.3rem;              /* Separación entre texto y línea */
+}
+
+
+/* ==== Filas de CV: fecha + descripción en 2 columnas ==== */
 .cv-row {
   display: grid;
-  grid-template-columns: 8.75rem 1fr; /* 140px en rem = 8.75rem */
-  column-gap: 0.75rem;                /* 12px */
-  padding: 0.0375rem 0;               /* 0.6px? Ajustable si quieres */
+  grid-template-columns: 140px 1fr; /* fecha | contenido */
+  column-gap: 1.2rem;
+  padding: 0.6rem 0;
 }
 
 .cv-date {
-  text-align: right;
-  font-family: "Helvetica Condensed", Helvetica, sans-serif;
-  font-weight: 300;
+  text-align: right;  /* Alineación a la derecha */
+  font-family: "Helvetica Condensed", "Helvetica", sans-serif;
+  font-weight: 300; /* Light */
   color: #666;
-  font-size: 0.55rem;                   /* 0.88px/16? Quizá ajusta */
+  font-size: 0.88rem;
 }
 
 .cv-desc {
-  text-align: justify;
+  text-align: justify;  /* Justificado */
   color: #666;
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
-/* ====================================== */
-/* BOTÓN DE DESCARGA DEL CV */
-.cv-download .btn {
+/* Opcional: línea sutil entre items
+.cv-row + .cv-row { border-top: 1px solid #eee; }
+*/
+
+/* ==== Botón descarga ==== */
+.cv-download .button {
   text-decoration: none;
-  padding: 0.28125rem 0.5rem;           /* 4.5px x 8px */
-  border: 0.0625rem solid rgba(0,0,0,0.15); /* 1px */
-  border-radius: 0.125rem;               /* 2px */
-  color: var(--text);
+  padding: 0.45rem 0.8rem;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 2px;
+  color: #111;
   font-size: 0.95rem;
 }
 
-/* ====================================== */
-/* FOOTER */
-footer {
-  margin: 4rem 0;
-  text-align: center;
-  opacity: 0.7;
-  font-size: 0.9rem;
+/* ==== Skills (barras) ==== */
+.skill { margin-bottom: 0.9rem; }
+.skill span {
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.35rem;
+  color: #666;
+}
+.bar {
+  background: #eee;
+  height: 4.5px;
+  border-radius: 0px; /*Borde redondeado de las barras*/
+  overflow: hidden;
+}
+.fill {
+  background: #666;
+  height: 100%;
+  width: 0; /* Se define en línea (style="width:70%") */
+}
+
+
+footer { margin: 4rem 0; text-align: center; opacity: 0.7; font-size: 0.9rem; }
+
+/* Mobile adjustments */
+@media (max-width: 700px) {
+  .container {margin: 2rem auto;}
+  header {justify-content: center; gap: 0.6rem; padding: 0.8rem;}
+  header a {margin-left: 0.6rem; font-size: 0.95rem;}
 }
