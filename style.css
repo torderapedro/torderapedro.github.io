@@ -111,6 +111,7 @@ a.button {
   border-radius: 2px;*/
   font-size: 0.95rem;
   color: var(--text);
+  font-weight: 700;
 }
 
 /* ====================================== */
