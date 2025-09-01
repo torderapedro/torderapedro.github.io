@@ -123,23 +123,23 @@ a.button {
 
 /* ==== Títulos con línea separadora (como la imagen) ==== */
 .cv-section-title {
-  display: block;                  /* para que la línea quede debajo */
-  font-size: 0.95rem;              /* tamaño original */
-  font-weight: 600;                /* peso original */
-  text-transform: uppercase;       /* mantiene mayúsculas */
-  letter-spacing: 0.4px;           /* espacio entre letras */
-  color: #333;                     /* color del texto */
-  margin: 2rem 0 1rem;             /* márgenes */
+  display: block;                  /* La línea queda debajo */
+  font-size: 0.95rem;              /* Tamaño de texto */
+  font-weight: 600;                /* Grosor del texto */
+  /*text-transform: uppercase;     /* Todo mayúsculas */
+  letter-spacing: 0.4px;           /* Espacio entre letras */
+  color: #333;                     /* Color del texto */
+  margin: 2rem 0 1rem;             /* Márgenes */
   position: relative;
 }
 
 .cv-section-title::after {
   content: "";
   display: block;
-  width: 100%;                     /* línea del ancho del título */
-  height: 2px;                     /* grosor de la línea: aumenta el valor para más gruesa */
-  background: #2c3e50;             /* color de la línea */
-  margin-top: 0.3rem;              /* separación entre texto y línea */
+  width: 100%;                     /* Línea bajo el título, es la longitud de la columna en la que está */
+  height: 1px;                     /* Grosor de la línea */
+  background: #2c3e50;             /* Color de la línea */
+  margin-top: 0.3rem;              /* Separación entre texto y línea */
 }
 
 
