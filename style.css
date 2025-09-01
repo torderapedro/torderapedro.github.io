@@ -18,32 +18,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ==== MENÚ SUPERIOR ==== */
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* siempre a la derecha */
   align-items: center;
+  gap: 1.5rem;               /* separación limpia entre enlaces */
   padding: 1rem 2rem;
   font-size: 0.95rem;
   position: sticky;
   top: 0;
-  background: transparent;
+  background: #fff;          /* pon blanco o el mismo fondo que uses */
   z-index: 10;
 }
 
 header a {
-  margin-left: 1.2rem;
   text-decoration: none;
-  color: var(--text);
-  opacity: 0.9;
+  color: var(--text, #111);  /* por si var(--text) no está definido */
+  font-weight: 400;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
 }
 
-header a:hover {opacity: 1; text-decoration: underline;}
-
-.container {
-  max-width: var(--maxw);
-  margin: 4rem auto;
-  padding: 0 1rem;
+header a:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
+
 
 h1 {font-weight: 400; margin: 0 0 0.5rem 0; letter-spacing: 0.6px;}
 h2 {font-weight: 400; margin: 0 0 1rem 0;}
