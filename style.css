@@ -251,7 +251,7 @@ footer {
 
   .home-container {
     height: auto;           /* quitar height fijo */
-    margin-top: 7rem;       /* permite que se quede abajo */
+    margin-top: 12rem;       /* permite que se quede abajo */
     margin-left: 1rem;      /* alineado a la izquierda */
     margin-right: 1rem;     /* un poco de espacio lateral */
     padding: 1.5rem 1rem;   /* espacio interior */
