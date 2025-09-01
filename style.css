@@ -56,14 +56,13 @@ header a:hover {
 /* ====================================== */
 .home-container {
   max-width: 650px;
-  height: calc(100vh - 60px); /* Ocupa toda la pantalla menos el header */
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* Alinea el contenido abajo */
   align-items: flex-start;   /* Alineado a la izquierda */
   padding: 2rem;             /* Espacio interior */
-  margin: 0;            /* Centrado horizontal del container */
-  margin-left: 2rem; /* Ajusta según tu gusto */
+  margin: 0;                 /* Centrado horizontal del container */
+  margin-left: 2rem;         /* Ajusta según tu gusto */
   text-align: justify;
 }
 
@@ -244,17 +243,27 @@ footer {
 /* Móviles */
 @media (max-width: 700px) {
   header {
-    justify-content: center;
+    justify-content: flex-end; /* siempre alineado a la derecha */
     gap: 0.6rem;
     padding: 0.8rem;
   }
   header a { font-size: 0.9rem; }
+
   .home-container {
-    height: calc(100vh - 50px);
-    margin-top: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1rem;
+    height: auto;           /* quitar height fijo */
+    margin-top: auto;       /* permite que se quede abajo */
+    margin-left: 1rem;      /* alineado a la izquierda */
+    margin-right: 1rem;     /* un poco de espacio lateral */
+    padding: 1.5rem 1rem;   /* espacio interior */
+    justify-content: flex-end; /* mantiene el contenido abajo */
+    align-items: flex-start;   /* alineado a la izquierda */
+  }
+
+  .home-grid {
+    justify-content: center;  /* centra los botones horizontalmente */
+  }
+}
+
   }
 }
 
