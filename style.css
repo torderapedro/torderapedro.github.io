@@ -95,68 +95,102 @@ a.button {
   color: var(--text);
 }
 
-/* ===== CV Layout ===== */
-.cv-container {
+/* ==== Página CV: layout en GRID (2 columnas) ==== */
+.cv-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;    /* izquierda grande, derecha estrecha */
+  gap: 3rem;
+}
+
+/* Responsive: en móvil pasa a 1 columna */
+@media (max-width: 900px) {
+  .cv-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Columnas */
+.cv-main { min-width: 0; }   /* evita desbordes en grid */
+.cv-aside { min-width: 0; }
+
+/* ==== Títulos con línea separadora (como la imagen) ==== */
+.cv-section-title {
   display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.cv-left {
-  flex: 2;
-  min-width: 300px;
-}
-
-.cv-right {
-  flex: 1;
-  min-width: 220px;
-}
-
-.cv-left h2,
-.cv-right h2 {
-  font-size: 1rem;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 1rem;
-  padding-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #333;
+  margin: 2rem 0 1rem;
 }
 
-.cv-item {
-  margin-bottom: 1.5rem;
+.cv-section-title::after {
+  content: "";
+  height: 1px;
+  background: #cfcfcf; /* línea fina */
+  flex: 1;             /* se estira hasta el borde derecho */
+}
+
+/* ==== Filas de CV: fecha + descripción en 2 columnas ==== */
+.cv-row {
+  display: grid;
+  grid-template-columns: 140px 1fr; /* fecha | contenido */
+  column-gap: 1.2rem;
+  padding: 0.6rem 0;
 }
 
 .cv-date {
-  font-size: 0.85rem;
   color: #666;
-  display: block;
-  margin-bottom: 0.2rem;
+  font-size: 0.88rem;
 }
 
-/* ===== Skills / Idiomas ===== */
-.skill {
-  margin-bottom: 1rem;
+.cv-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
+/* Opcional: línea sutil entre items
+.cv-row + .cv-row { border-top: 1px solid #eee; }
+*/
+
+/* ==== Botón descarga ==== */
+.cv-download .button {
+  text-decoration: none;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 2px;
+  color: #111;
+  font-size: 0.95rem;
+}
+
+/* ==== Skills (barras) ==== */
+.skill { margin-bottom: 0.9rem; }
 .skill span {
-  font-size: 0.9rem;
   display: block;
-  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
 }
-
 .bar {
   background: #eee;
   height: 6px;
   border-radius: 3px;
   overflow: hidden;
 }
-
 .fill {
   background: #111;
   height: 100%;
+  width: 0; /* se define en línea (style="width:70%") */
 }
+
 
 footer { margin: 4rem 0; text-align: center; opacity: 0.7; font-size: 0.9rem; }
 
