@@ -1,101 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículum Vitae</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículum Vitae — Nombre Apellido</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Menú superior (discreto, arriba a la derecha) -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="cv.html" class="active">CV</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
+    <a href="index.html">Inicio</a>
+    <a href="cv.html">Curriculum</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html">Blog</a>
+    <a href="cv-en.html">EN</a>
   </header>
 
-  <main class="cv-container">
+  <!-- Página CV -->
+  <main class="cv-page">
 
-    <!-- Columna izquierda -->
-    <div class="cv-left">
-      <section>
-        <h2>Formación Académica</h2>
-        <div class="cv-item">
-          <span class="cv-date">10/2023 – 07/2025</span>
-          <p><strong>Máster Universitario en Arquitectura</strong><br>
-          ETSAS, Universidad de Sevilla</p>
-        </div>
-        <div class="cv-item">
-          <span class="cv-date">09/2018 – 07/2023</span>
-          <p><strong>Grado en Fundamentos de la Arquitectura</strong><br>
-          ETSAS, Universidad de Sevilla</p>
-        </div>
-      </section>
+    <!-- GRID: principal (izq) + lateral (der) -->
+    <div class="cv-grid">
 
-      <section>
-        <h2>Experiencia y Formación Complementaria</h2>
-        <div class="cv-item">
-          <span class="cv-date">01/2023 – 08/2023</span>
-          <p><strong>Diseño y montaje de prototipos mobiliarios. Workshop BIBLIOKEPOS</strong><br>
-          Escuela Técnica Superior de Arquitectura de Sevilla. ISBN 978-84-19600-91-5</p>
-        </div>
-        <div class="cv-item">
-          <span class="cv-date">02/2024 – 04/2024</span>
-          <p><strong>Curso “Architecture, city and culture in East Asia. China versus Japan”</strong><br>
-          Ulysseus European University, Universidad de Sevilla</p>
-        </div>
-        <div class="cv-item">
-          <span class="cv-date">05/2022</span>
-          <p><strong>Participación en concurso Rockwool. Rehabilitación energética</strong><br>
-          VIII Edición por Grupo Puma</p>
-        </div>
-      </section>
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="cv-main">
+        <!-- SECCIÓN: Formación académica -->
+        <section class="cv-section">
+          <h2 class="cv-section-title"><span>Formación Académica</span></h2>
+
+          <div class="cv-row">
+            <div class="cv-date">10/2023 – 07/2025</div>
+            <div class="cv-desc">
+              <strong>Máster Universitario en Arquitectura</strong><br>
+              Escuela Técnica Superior de Arquitectura de Sevilla (ETSAS), Universidad de Sevilla
+            </div>
+          </div>
+
+          <div class="cv-row">
+            <div class="cv-date">09/2018 – 07/2023</div>
+            <div class="cv-desc">
+              <strong>Grado en Fundamentos de la Arquitectura</strong><br>
+              Escuela Técnica Superior de Arquitectura de Sevilla (ETSAS), Universidad de Sevilla
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCIÓN: Experiencia y formación complementaria -->
+        <section class="cv-section">
+          <h2 class="cv-section-title"><span>Experiencia y Formación Complementaria</span></h2>
+
+          <div class="cv-row">
+            <div class="cv-date">01/2023 – 08/2023</div>
+            <div class="cv-desc">
+              <strong>Diseño y montaje de prototipos mobiliarios. Workshop BIBLIOKEPOS</strong><br>
+              Miembro del equipo creador de prototipos mobiliarios para biblioteca.<br>
+              ETSAS. Galerías 01. ISBN 978-84-19600-91-5
+            </div>
+          </div>
+
+          <div class="cv-row">
+            <div class="cv-date">02/2024 – 04/2024</div>
+            <div class="cv-desc">
+              <strong>Architecture, city and culture in East Asia. China vs Japan</strong><br>
+              Ulysseus European University, Universidad de Sevilla
+            </div>
+          </div>
+
+          <div class="cv-row">
+            <div class="cv-date">05/2022</div>
+            <div class="cv-desc">
+              <strong>Concurso Rockwool — Rehabilitación energética</strong><br>
+              VIII Edición por Grupo Puma
+            </div>
+          </div>
+        </section>
+
+        <!-- Descarga CV -->
+        <p class="cv-download">
+          <a class="button" href="assets/cv.pdf" download>Descargar CV (PDF)</a>
+        </p>
+      </div>
+
+      <!-- COLUMNA DERECHA (ASIDE) -->
+      <aside class="cv-aside">
+        <section class="cv-section">
+          <h2 class="cv-section-title"><span>Idiomas</span></h2>
+
+          <div class="skill">
+            <span>Español</span>
+            <div class="bar"><div class="fill" style="width:100%"></div></div>
+          </div>
+          <div class="skill">
+            <span>Inglés B1</span>
+            <div class="bar"><div class="fill" style="width:60%"></div></div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title"><span>Skills</span></h2>
+
+          <div class="skill">
+            <span>AutoCAD</span>
+            <div class="bar"><div class="fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill">
+            <span>Illustrator</span>
+            <div class="bar"><div class="fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill">
+            <span>Photoshop</span>
+            <div class="bar"><div class="fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill">
+            <span>Revit</span>
+            <div class="bar"><div class="fill" style="width:65%"></div></div>
+          </div>
+          <div class="skill">
+            <span>SketchUp</span>
+            <div class="bar"><div class="fill" style="width:70%"></div></div>
+          </div>
+        </section>
+      </aside>
+
     </div>
-
-    <!-- Columna derecha -->
-    <div class="cv-right">
-      <section>
-        <h2>Idiomas</h2>
-        <div class="skill">
-          <span>Español</span>
-          <div class="bar"><div class="fill" style="width:100%"></div></div>
-        </div>
-        <div class="skill">
-          <span>Inglés B1</span>
-          <div class="bar"><div class="fill" style="width:60%"></div></div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Skills</h2>
-        <div class="skill">
-          <span>AutoCAD</span>
-          <div class="bar"><div class="fill" style="width:80%"></div></div>
-        </div>
-        <div class="skill">
-          <span>Illustrator</span>
-          <div class="bar"><div class="fill" style="width:75%"></div></div>
-        </div>
-        <div class="skill">
-          <span>Photoshop</span>
-          <div class="bar"><div class="fill" style="width:70%"></div></div>
-        </div>
-        <div class="skill">
-          <span>Revit</span>
-          <div class="bar"><div class="fill" style="width:65%"></div></div>
-        </div>
-        <div class="skill">
-          <span>SketchUp</span>
-          <div class="bar"><div class="fill" style="width:70%"></div></div>
-        </div>
-      </section>
-    </div>
-
   </main>
 
 </body>
