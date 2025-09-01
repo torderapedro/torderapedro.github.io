@@ -66,14 +66,16 @@ h1  {
   margin-bottom: 0rem;
   color: #111111;
 }
- /* Subtítulo*/
+ 
+/* Subtítulo*/
 .subtitle {
   font-size: 1.5rem;
   font-weight: 400;
   color: #111111;
   margin-bottom: 1.5rem;
 }
-  
+
+/*Texto de introducción*/
 .lead {
   opacity: 0.85;
   margin-bottom: 2rem;
@@ -81,6 +83,14 @@ h1  {
   text-align: justify;  /* Justificado */
   line-height: 1.6;
   font-weight: 300;
+}
+
+/*Botones inicio*/
+
+.home-grid {
+  display: flex;
+  gap: 2rem;             /* Espacio entre botones */
+  margin-top: 2rem;
 }
 
 .grid {
