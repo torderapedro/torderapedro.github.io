@@ -123,20 +123,25 @@ a.button {
 
 /* ==== Títulos con línea separadora (como la imagen) ==== */
 .cv-section-title {
-  display: block;
-  font-weight: 600;
+  display: block;                  /* para que la línea quede debajo */
+  font-size: 0.95rem;              /* tamaño original */
+  font-weight: 600;                /* peso original */
+  text-transform: uppercase;       /* mantiene mayúsculas */
+  letter-spacing: 0.4px;           /* espacio entre letras */
+  color: #333;                     /* color del texto */
+  margin: 2rem 0 1rem;             /* márgenes */
   position: relative;
-  margin: 2rem 0 1rem;
 }
 
 .cv-section-title::after {
   content: "";
   display: block;
-  width: 100%;
-  height: 1px;
-  background: #cfcfcf;
-  margin-top: 0.3rem; /* separa línea del texto */
+  width: 100%;                     /* línea del ancho del título */
+  height: 2px;                     /* grosor de la línea: aumenta el valor para más gruesa */
+  background: #2c3e50;             /* color de la línea */
+  margin-top: 0.3rem;              /* separación entre texto y línea */
 }
+
 
 /* ==== Filas de CV: fecha + descripción en 2 columnas ==== */
 .cv-row {
