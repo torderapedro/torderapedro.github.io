@@ -89,8 +89,8 @@ a.button {
   display: inline-block;
   text-decoration: none;
   padding: 0.5rem 0.9rem;
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 2px;
+  border: 0px solid rgba(0,0,0,0.08);
+  border-radius: 0px;
   font-size: 0.95rem;
   margin-top: 1rem;
   color: var(--text);
@@ -183,19 +183,19 @@ a.button {
 .skill { margin-bottom: 0.9rem; }
 .skill span {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   margin-bottom: 0.35rem;
 }
 .bar {
   background: #eee;
   height: 6px;
-  border-radius: 3px;
+  /* border-radius: 3px; Borde redondeado de las barras*/ 
   overflow: hidden;
 }
 .fill {
   background: #666;
   height: 100%;
-  width: 0; /* se define en línea (style="width:70%") */
+  width: 0; /* Se define en línea (style="width:70%") */
 }
 
 
