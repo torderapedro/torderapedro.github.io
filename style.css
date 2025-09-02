@@ -90,7 +90,7 @@ h1  {
   margin-bottom: 0.5rem;
   font-style: italic;
   text-align: justify;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 /* Botones en inicio */
@@ -217,6 +217,7 @@ a.button {
   font-size: 0.8rem;
   margin-bottom: 0.35rem;
   color: #555;
+  font-weight: 300
 }
 .bar {
   background: #eee;
@@ -316,8 +317,8 @@ footer {
   .cv-page {
     padding-left: 1rem;   /* igual que home-container */
     padding-right: 1rem;  /* igual que home-container */
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .cv-grid {
