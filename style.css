@@ -132,6 +132,7 @@ a.button {
 }
 .card img {
   width: 100%;
+  aspect-ratio: 1 / 1;
   height: auto;
   object-fit: cover;
   border-radius: 2px;
@@ -140,6 +141,7 @@ a.button {
   font-size: 0.95rem;
   text-align: left;
   color: var(--text);
+  text-decoration: none; /* quita subrayado */
 }
 .container {
   padding-left: 1rem;
