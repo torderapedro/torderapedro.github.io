@@ -1,31 +1,45 @@
-/* Imagen principal */
-.main-image-container {
-  margin: 1.5rem 0;
-  text-align: center;
-}
-.main-image-container img {
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-  border-radius: 4px;
-  cursor: pointer;
+// Seleccionamos la imagen principal y las miniaturas
+const mainImage = document.querySelector(".main-image-container img");
+const thumbnails = document.querySelectorAll(".gallery-thumb");
+
+// Creamos las flechas
+const prevBtn = document.createElement("button");
+prevBtn.textContent = "❮";
+const nextBtn = document.createElement("button");
+nextBtn.textContent = "❯";
+
+// Añadimos clases a las flechas
+prevBtn.classList.add("prev");
+nextBtn.classList.add("next");
+
+// Posicionamos las flechas dentro del contenedor principal
+const container = document.querySelector(".main-image-container");
+container.appendChild(prevBtn);
+container.appendChild(nextBtn);
+
+// Estado actual de la galería
+let currentIndex = 0;
+
+// Función para mostrar la imagen según índice
+function showImage(index) {
+  if (index < 0) index = thumbnails.length - 1;
+  if (index >= thumbnails.length) index = 0;
+  currentIndex = index;
+  mainImage.src = thumbnails[index].src;
+
+  // Resaltamos la miniatura activa
+  thumbnails.forEach(t => t.classList.remove("active"));
+  thumbnails[index].classList.add("active");
 }
 
-/* Galería de miniaturas */
-.gallery {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-.gallery-thumb {
-  width: 100px;
-  height: 70px;
-  object-fit: cover;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-}
-.gallery-thumb:hover {
-  border-color: var(--primary);
-}
+// Flechas de navegación
+prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
+nextBtn.addEventListener("click", () => showImage(currentIndex + 1));
+
+// Click en miniaturas
+thumbnails.forEach((thumb, i) => {
+  thumb.addEventListener("click", () => showImage(i));
+});
+
+// Inicializamos mostrando la primera imagen
+showImage(0);
