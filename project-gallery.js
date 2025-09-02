@@ -2,6 +2,9 @@
 const mainImage = document.querySelector(".main-image-container img");
 const thumbnails = document.querySelectorAll(".gallery-thumb");
 
+// Seleccionamos el enlace alrededor de la imagen principal (para abrir en tamaño completo)
+const mainLink = document.querySelector(".main-image-container a");
+
 // Creamos las flechas
 const prevBtn = document.createElement("button");
 prevBtn.textContent = "❮";
@@ -25,7 +28,10 @@ function showImage(index) {
   if (index < 0) index = thumbnails.length - 1;
   if (index >= thumbnails.length) index = 0;
   currentIndex = index;
+
+  // Cambiamos la imagen principal y el enlace
   mainImage.src = thumbnails[index].src;
+  if(mainLink) mainLink.href = thumbnails[index].src;
 
   // Resaltamos la miniatura activa
   thumbnails.forEach(t => t.classList.remove("active"));
