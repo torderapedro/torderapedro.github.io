@@ -27,7 +27,7 @@
 }
 
 /* Subtítulo */
-.home-container subtitle {
+.home-container .subtitle {
   font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 400;
   color: var(--text);
@@ -35,7 +35,7 @@
 }
 
 /* Texto introductorio */
-.home-container lead h1 {
+.home-container .lead {
   font-size: clamp(0.8rem, 2vw, 1.2rem);
   opacity: 0.85;
   margin-bottom: 0.5rem;
