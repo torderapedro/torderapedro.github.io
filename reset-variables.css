@@ -1,0 +1,25 @@
+/* ====================================== */
+/* VARIABLES GLOBALES Y RESET             */
+/* ====================================== */
+
+:root {				/*Valores base*/
+  --bg: #fafaf8;
+  --text: #111111;
+  --primary: #fafaf8;
+  --maxw: 61.25rem;
+  --gap: 2rem;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0;			/* elimina márgenes por defecto del navegador */
+  padding: 0;  			/* elimina padding por defecto */
+  font-family: Helvetica, 'Roboto', sans-serif; /* tipografía principal */
+  background: var(--bg);	/* color de fondo definido en tu variable --bg */
+  color: var(--text);		/* color de texto principal */
+  line-height: 1.6;		/* altura de línea cómoda para leer */
+  -webkit-font-smoothing: antialiased;	/* suaviza fuentes en Chrome/Safari */
+  -moz-osx-font-smoothing: grayscale;	/* suaviza fuentes en Firefox Mac */
+}
