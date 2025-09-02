@@ -121,7 +121,7 @@ a.button {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* ancho mínimo de cada card, pero flexible */
   gap: 1rem;
   justify-items: start;   /* alinea las cards a la izquierda */
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .card {
