@@ -15,32 +15,33 @@
     <a href="../blog.html">Blog</a>
     <a href="proyecto1-en.html">EN</a>
   </header>
-  
-<main class="container">
-  <h1>Proyecto 1</h1>
-  <img src="../assets/proj1.jpg" alt="Proyecto 1" class="project-main-img">
 
-  <p>Descripción breve del proyecto. Aquí añades los datos: cliente, año, superficie, breve texto descriptivo.</p>
+  <main class="container">
+    <!-- Título del proyecto -->
+    <h1 class="project-title">Proyecto 1</h1>
 
-  <!-- Galería de imágenes del proyecto -->
-  <div class="project-gallery">
-    <div class="gallery-item">
-      <img src="../assets/proj1.jpg" alt="Proyecto 1 - Vista 1">
+    <!-- Imagen principal -->
+    <div class="main-image-container">
+      <a href="../assets/proj1.jpg" target="_blank">
+        <img id="main-img" src="../assets/proj1.jpg" alt="Proyecto 1">
+      </a>
     </div>
-    <div class="gallery-item">
-      <img src="../assets/proj1.jpg" alt="Proyecto 1 - Vista 2">
-    </div>
-    <div class="gallery-item">
-      <img src="../assets/proj1.jpg" alt="Proyecto 1 - Vista 3">
-    </div>
-    <div class="gallery-item">
-      <img src="../assets/proj1.jpg" alt="Proyecto 1 - Vista 4">
-    </div>
-  </div>
 
-  <p><a href="../assets/proyecto1.pdf" download class="button">Descargar dossier (PDF)</a></p>
-</main>
+    <!-- Descripción -->
+    <p>Descripción breve del proyecto. Aquí añades los datos: cliente, año, superficie, breve texto descriptivo.</p>
+    <p><a href="../assets/proyecto1.pdf" download>Descargar dossier (PDF)</a></p>
+
+    <!-- Galería -->
+    <div class="gallery">
+      <img class="gallery-thumb" src="../assets/proj1.jpg" alt="Vista 1">
+      <img class="gallery-thumb" src="../assets/proj1.jpg" alt="Vista 2">
+      <img class="gallery-thumb" src="../assets/proj1-3.jpg" alt="Vista 3">
+    </div>
+  </main>
 
   <footer>© Nombre Apellido</footer>
+
+  <!-- JS para cambiar la imagen principal -->
+  <script src="../js/project-gallery.js"></script>
 </body>
 </html>
