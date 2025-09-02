@@ -218,6 +218,28 @@ a.button {
   width: 0; /* Se asigna inline con style="width:70%" */
 }
 
+/* Fila con asignatura + nota */
+.cv-grade {
+  display: grid;
+  grid-template-columns: 1fr auto; /* izquierda flexible, derecha ajustada */
+  gap: 1rem; /* separación entre columna asignatura y nota */
+  font-size: 0.82rem;
+  color: #555;
+  padding: 0.2rem 0;
+}
+
+/* Columna de asignatura */
+.cv-grade .subject {
+  text-align: left;
+}
+
+/* Columna de nota */
+.cv-grade .mark {
+  text-align: right;
+  font-weight: 600;
+}
+
+
 /* ====================================== */
 /* FOOTER */
 /* ====================================== */
