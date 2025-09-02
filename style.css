@@ -318,15 +318,47 @@ a.button {
 
 /* Imagen principal */
 .main-image-container {
+  position: relative;
   margin: 1.5rem 0;
-}
-.main-image-container img {
   width: 100%;
   max-width: 100%;
-  height: auto;
+  height: 500px; /* altura fija del marco */
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.main-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* se recorta si es necesario */
   display: block;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+}
+
+/* Botones de navegación */
+.main-image-container .prev,
+.main-image-container .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 10;
+  user-select: none;
+}
+
+.main-image-container .prev { left: 10px; }
+.main-image-container .next { right: 10px; }
+
+.main-image-container .prev:hover,
+.main-image-container .next:hover {
+  background: rgba(0,0,0,0.7);
 }
 
 /* Galería de miniaturas */
@@ -335,7 +367,9 @@ a.button {
   gap: 0.5rem;
   margin-top: 1rem;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
+
 .gallery-thumb {
   width: 100px;
   height: 70px;
@@ -343,10 +377,20 @@ a.button {
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 2px;
+  transition: border-color 0.2s, transform 0.2s;
 }
+
 .gallery-thumb:hover {
   border-color: var(--primary);
+  transform: scale(1.05);
 }
+
+/* Quitar estilo de link en la galería (si es que los thumbs son enlaces) */
+.gallery-thumb a {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 
 /* ====================================== */
