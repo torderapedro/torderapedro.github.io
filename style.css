@@ -137,9 +137,13 @@ a.button {
   object-fit: cover;
   border-radius: 2px;
 }
-.card .title {
+.card .title,
+.card .title a,
+.card .title a:visited,
+.card .title a:hover,
+.card .title a:active {
   font-size: 0.95rem;
-  text-align: left;
+  text-align: center;
   color: var(--text);
   text-decoration: none; /* quita subrayado */
 }
