@@ -1,0 +1,126 @@
+/* ====================================== */
+/* PÁGINA CV */
+/* ====================================== */
+
+.cv-page {
+  max-width: 68.75px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* izquierda ancha, derecha estrecha */
+  gap: 3rem;
+}
+.cv-main, .cv-aside { min-width: 0; }
+
+/* Títulos de secciones */
+.cv-section-title {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #333;
+  margin: 2rem 0 1rem;
+  position: relative;
+}
+.cv-section-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--primary);
+  margin-top: 0.3rem;
+}
+
+.cv-section-title-grades {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #666;
+  margin: 2rem 0 1rem;
+  position: relative;
+}
+
+/* Filas de experiencia */
+.cv-row {
+  display: grid;
+  grid-template-columns: 8.75px 1fr; /* fecha | contenido */
+  column-gap: 1.2rem;
+  padding: 0.6rem 0;
+}
+.cv-date {
+  text-align: right;
+  font-weight: 300;
+  font-size: 0.88rem;
+  color: #666;
+}
+.cv-desc {
+  text-align: justify;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+  font-weight: 400;
+}
+
+/* Skills */
+.skill { margin-bottom: 0.9rem; }
+.skill span {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.35rem;
+  color: #555;
+  font-weight: 300
+}
+.bar {
+  background: #eee;
+  height: 4.5px;
+  border-radius: 0;
+  overflow: hidden;
+}
+.fill {
+  background: #666;
+  height: 100%;
+  width: 0; /* Se asigna inline con style="width:70%" */
+}
+
+/* Fila con asignatura + nota */
+.cv-grade {
+  display: grid;
+  grid-template-columns: 1fr auto; /* primera flexible, segunda lo justo */
+  gap: 1rem;
+  font-size: 0.80rem;
+  color: #555;
+  padding: 0.2rem 0;
+}
+
+/* Columna de asignatura */
+.cv-grade .subject {
+  text-align: left;
+  font-weight: 300;
+}
+
+/* Columna de nota */
+.cv-grade .mark {
+  justify-self: end;  /* pega las notas al borde derecho del aside */
+  font-weight: 500;
+}
+
+/* Botón de descarga centrado al final */
+.cv-download {
+  text-align: center;
+  margin: 3rem 0; /* espacio arriba y abajo */
+}
+.cv-download .button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--text);
+  background: none;
+}
