@@ -1,24 +1,13 @@
 // Seleccionamos la imagen principal y las miniaturas
-const mainImage = document.querySelector(".main-image-container img");
+const mainImage = document.querySelector("#main-img");
 const thumbnails = document.querySelectorAll(".gallery-thumb");
 
 // Seleccionamos el enlace alrededor de la imagen principal (para abrir en tamaño completo)
 const mainLink = document.querySelector(".main-image-container a");
 
-// Creamos las flechas
-const prevBtn = document.createElement("button");
-prevBtn.textContent = "❮";
-const nextBtn = document.createElement("button");
-nextBtn.textContent = "❯";
-
-// Añadimos clases a las flechas
-prevBtn.classList.add("prev");
-nextBtn.classList.add("next");
-
-// Posicionamos las flechas dentro del contenedor principal
-const container = document.querySelector(".main-image-container");
-container.appendChild(prevBtn);
-container.appendChild(nextBtn);
+// Seleccionamos los botones de navegación existentes
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
 
 // Estado actual de la galería
 let currentIndex = 0;
@@ -31,7 +20,7 @@ function showImage(index) {
 
   // Cambiamos la imagen principal y el enlace
   mainImage.src = thumbnails[index].src;
-  if(mainLink) mainLink.href = thumbnails[index].src;
+  if (mainLink) mainLink.href = thumbnails[index].src;
 
   // Resaltamos la miniatura activa
   thumbnails.forEach(t => t.classList.remove("active"));
