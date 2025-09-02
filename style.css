@@ -207,15 +207,16 @@ a.button {
   font-size: 0.95rem;
   line-height: 1.6;
   color: #666;
+  font-weight: 400;
 }
 
 /* Skills */
 .skill { margin-bottom: 0.9rem; }
 .skill span {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   margin-bottom: 0.35rem;
-  color: #666;
+  color: #555;
 }
 .bar {
   background: #eee;
@@ -234,7 +235,7 @@ a.button {
   display: grid;
   grid-template-columns: 1fr auto; /* primera flexible, segunda lo justo */
   gap: 1rem;
-  font-size: 0.82rem;
+  font-size: 0.80rem;
   color: #555;
   padding: 0.2rem 0;
 }
@@ -285,7 +286,7 @@ footer {
 /* Móviles */
 @media (max-width: 700px) {
   header {
-    justify-content: flex-end; /* siempre alineado a la derecha */
+    justify-content: center; /* siempre alineado a la derecha */
     gap: 0.6rem;
     padding: 0.8rem;
   }
