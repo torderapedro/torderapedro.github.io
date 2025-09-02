@@ -221,8 +221,8 @@ a.button {
 /* Fila con asignatura + nota */
 .cv-grade {
   display: grid;
-  grid-template-columns: 1fr auto; /* izquierda flexible, derecha ajustada */
-  gap: 1rem; /* separación entre columna asignatura y nota */
+  grid-template-columns: 1fr min-content; /* primera flexible, segunda lo justo */
+  gap: 1rem;
   font-size: 0.82rem;
   color: #555;
   padding: 0.2rem 0;
@@ -235,7 +235,7 @@ a.button {
 
 /* Columna de nota */
 .cv-grade .mark {
-  text-align: right;
+  justify-self: end;  /* pega las notas al borde derecho del aside */
   font-weight: 600;
 }
 
