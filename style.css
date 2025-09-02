@@ -486,4 +486,9 @@ footer {
     grid-template-columns: 1fr;
     justify-content: stretch; /* que ocupe todo el ancho */
   }
+  .project-title {
+    display: block;           /* permite que clamp() funcione correctamente */
+    margin: 1.5rem 0 1rem;    /* ajustar margen superior e inferior */
+    font-size: clamp(1.2rem, 6vw, 2.5rem); /* opcional: ajustar rango en móvil */
+  }
 }
