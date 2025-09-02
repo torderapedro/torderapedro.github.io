@@ -1,0 +1,70 @@
+/* ====================================== */
+/* GRID DE CARDS (Portfolio o Blog) */
+/* ====================================== */
+
+/* Cuadricula general*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16.25px, 1fr)); /* ancho mínimo de cada card, pero flexible */
+  gap: 1rem;
+  justify-items: start;   /* alinea las cards a la izquierda */
+  margin-top: 6rem;
+}
+
+/* Card individual*/
+.card {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  gap: 0.6rem;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;	/* Imagen cuadrada*/
+  height: auto;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/*Títulos de card*/
+.card .title,
+.card .title a,
+.card .title a:visited,
+.card .title a:hover,
+.card .title a:active {
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--text);
+  text-decoration: none; /* quita subrayado */
+}
+
+/* Contenedor principal*/
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 87.5px;
+  margin: 0 auto; /* centra horizontalmente */
+}
+
+/* Títulos */
+.container h1 {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  margin: 2.5rem 0 1.5rem;
+  text-align: left;
+  color: var(--text);
+  /*border-bottom: 2px solid var(--text-light);*/ /*Subrayado*/
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+.page-title {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  font-weight: 700;
+  margin: 2.5rem 0 1.5rem;
+  text-align: left;
+  color: var(--text);
+  border-bottom: 2px solid var(--text-light);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
