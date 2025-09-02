@@ -178,6 +178,17 @@ a.button {
   margin-top: 0.3rem;
 }
 
+.cv-section-title-grades {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #666;
+  margin: 2rem 0 1rem;
+  position: relative;
+}
+
 /* Filas de experiencia */
 .cv-row {
   display: grid;
