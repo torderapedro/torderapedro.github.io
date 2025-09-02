@@ -61,7 +61,7 @@ header a:hover {
   justify-content: flex-end; /* Alinea el contenido abajo */
   align-items: flex-start;   /* Alineado a la izquierda */
   padding: 2rem;             /* Espacio interior */
-  margin-top: 5rem;                 /* Centrado horizontal del container */
+  margin-top: 12rem;                 /* Centrado horizontal del container */
   margin-left: 2rem;         /* Ajusta según tu gusto */
   text-align: justify;
 }
@@ -90,7 +90,7 @@ h1  {
   margin-bottom: 0.5rem;
   font-style: italic;
   text-align: justify;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 /* Botones en inicio */
