@@ -267,12 +267,6 @@ footer {
 /* ====================================== */
 
 /* Tablets y móviles grandes */
-@media (max-width: 700px) {
-  .cv-grid {
-    grid-template-columns: 1fr; /* CV a una sola columna */
-    gap: 2rem;
-  }
-}
 
 /* Móviles */
 @media (max-width: 700px) {
@@ -298,10 +292,24 @@ footer {
   }
 }
 @media (max-width: 700px) {
-  
+
+  /* Contenedor CV */
+  .cv-page {
+    padding-left: 1rem;   /* igual que home-container */
+    padding-right: 1rem;  /* igual que home-container */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cv-grid {
+    grid-template-columns: 1fr; /* pasar a una columna */
+    gap: 2rem;
+  }
+}
+
   .cv-section-title,
   .cv-section-title-grades {
-    margin: 3rem 0 1.5rem; /* más separación arriba y abajo */
+    margin: 5rem 0 1.5rem; /* más separación arriba y abajo */
   }
   
   .cv-row {
