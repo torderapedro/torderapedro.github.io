@@ -5,9 +5,21 @@ const thumbnails = document.querySelectorAll(".gallery-thumb");
 // Seleccionamos el enlace alrededor de la imagen principal (para abrir en tamaño completo)
 const mainLink = document.querySelector(".main-image-container a");
 
-// Seleccionamos los botones de navegación existentes
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
+// Contenedor principal de la imagen
+const container = document.querySelector(".main-image-container");
+
+// Creamos las flechas de navegación
+const prevBtn = document.createElement("button");
+prevBtn.textContent = "❮";
+prevBtn.classList.add("prev");
+
+const nextBtn = document.createElement("button");
+nextBtn.textContent = "❯";
+nextBtn.classList.add("next");
+
+// Añadimos las flechas al contenedor
+container.appendChild(prevBtn);
+container.appendChild(nextBtn);
 
 // Estado actual de la galería
 let currentIndex = 0;
@@ -20,18 +32,18 @@ function showImage(index) {
 
   // Cambiamos la imagen principal y el enlace
   mainImage.src = thumbnails[index].src;
-  if (mainLink) mainLink.href = thumbnails[index].src;
+  if(mainLink) mainLink.href = thumbnails[index].src;
 
   // Resaltamos la miniatura activa
   thumbnails.forEach(t => t.classList.remove("active"));
   thumbnails[index].classList.add("active");
 }
 
-// Flechas de navegación
+// Navegación con flechas
 prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
 nextBtn.addEventListener("click", () => showImage(currentIndex + 1));
 
-// Click en miniaturas
+// Clic en miniaturas
 thumbnails.forEach((thumb, i) => {
   thumb.addEventListener("click", () => showImage(i));
 });
