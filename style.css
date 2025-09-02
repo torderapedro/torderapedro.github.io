@@ -298,6 +298,6 @@ footer {
   }
 
   .cv-desc {
-    text-align: left;             /* Mejor en móvil que quede alineado a la izquierda */
+    text-align: justify;             /* Mejor en móvil que quede alineado a la izquierda */
   }
 }
