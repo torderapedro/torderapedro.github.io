@@ -374,4 +374,13 @@ footer {
     text-align: justify;             /* Mejor en móvil que quede alineado a la izquierda */
     font-size: 0.85rem;
   }
+  
+    /* Portfolio y Blog */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 }
