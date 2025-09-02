@@ -302,6 +302,36 @@ a.button {
   color: var(--text);
 }
 
+/* ====================================== */
+/* PROYECTOS */
+/* ====================================== */
+.project-main-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 2px;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0; /* espacio superior e inferior */
+}
+
+.project-gallery .gallery-item img {
+  width: 100%;
+  height: 150px; /* altura uniforme para todas las miniaturas */
+  object-fit: cover;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.project-gallery .gallery-item img:hover {
+  transform: scale(1.05); /* efecto al pasar el cursor */
+}
+
 
 /* ====================================== */
 /* FOOTER */
