@@ -286,9 +286,13 @@ footer {
 /* Móviles */
 @media (max-width: 700px) {
   header {
-    justify-content: center; /* siempre alineado a la derecha */
+    position: sticky;      /* asegurarse que siga sticky */
+    top: 0;                /* posición desde la parte superior */
+    z-index: 999;          /* encima de otros elementos */
+    justify-content: center; 
     gap: 0.6rem;
     padding: 0.8rem;
+    background: var(--bg); /* que el fondo tape contenido detrás */
   }
   header a { font-size: 0.9rem; }
 
