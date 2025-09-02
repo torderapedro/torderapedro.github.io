@@ -20,32 +20,30 @@
     <!-- Título del proyecto -->
     <h1 class="project-title">Infraestructura Situada</h1>
 
-    <!-- Imagen principal con enlace -->
+    <!-- Imagen principal sin enlace, las flechas se añaden desde JS -->
     <div class="main-image-container">
-      <a href="../assets/proyectos/proyecto1/proy1-1.jpg" target="_blank">
-        <img id="main-img" src="../assets/proyectos/proyecto1/proy1-1.jpg" alt="Infraestructura situada">
-      </a>
+      <img id="main-img" src="../assets/proyectos/proyecto1/proy1-1.jpg" alt="Infraestructura situada">
     </div>
 
     <!-- Descripción -->
     <p>Descripción breve del proyecto. Aquí añades los datos: cliente, año, superficie, breve texto descriptivo.</p>
-    
-    <!-- Botón de descarga al final de la página -->
-    <p class="cv-download">
-      <a class="button" href="../assets/proyecto1.pdf" download>Descargar dossier (PDF)</a>
-    </p>
 
-    <!-- Galería de miniaturas -->
+      <!-- Galería de miniaturas -->
     <div class="gallery">
       <img class="gallery-thumb" src="../assets/proyectos/proyecto1/proy1-1.jpg" alt="Vista 1">
       <img class="gallery-thumb" src="../assets/proyectos/proyecto1/proy1-2.jpg" alt="Vista 2">
       <img class="gallery-thumb" src="../assets/proyectos/proyecto1/proy1-3.jpg" alt="Vista 3">
     </div>
+
+    <!-- Botón de descarga -->
+    <p class="cv-download">
+      <a class="button" href="../assets/proyecto1.pdf" download>Descargar dossier (PDF)</a>
+    </p>
   </main>
 
   <footer>2025 © Pedro Tordera Arillo</footer>
 
-  <!-- JS para cambiar la imagen principal -->
+  <!-- JS para cambiar la imagen principal y controlar la galería -->
   <script src="../js/project-gallery.js"></script>
 </body>
 </html>
