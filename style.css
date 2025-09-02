@@ -319,9 +319,10 @@ a.button {
 /* Imagen principal (carrusel) */
 .main-image-container {
   position: relative;
-  margin: 2rem 0; /* margen superior e inferior */
+  margin: 2rem 0;       /* margen superior e inferior */
   width: 100%;
-  height: 500px; /* altura fija en escritorio */
+  max-width: 100%;      /* no sobrepasa el container */
+  aspect-ratio: 16/9;   /* mantiene proporción adaptable */
   overflow: hidden;
   border-radius: 6px;
 }
@@ -329,7 +330,7 @@ a.button {
 .main-image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;    /* se recorta si es necesario pero mantiene proporción */
   display: block;
   cursor: pointer;
 }
