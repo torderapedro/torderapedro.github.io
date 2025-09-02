@@ -491,4 +491,18 @@ footer {
     margin: 1.5rem 0 1rem;    /* ajustar margen superior e inferior */
     font-size: clamp(1.2rem, 6vw, 2.5rem); /* opcional: ajustar rango en móvil */
   }
+  @media (max-width: 700px) {
+  .main-image-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* crea marco cuadrado */
+    overflow: hidden;
+  }
+  .main-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 }
