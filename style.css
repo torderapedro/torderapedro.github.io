@@ -307,7 +307,7 @@ a.button {
 /* ====================================== */
 
 .project-title {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
   font-weight: 700;
   margin: 2rem 0 1rem;
   color: var(--text);
