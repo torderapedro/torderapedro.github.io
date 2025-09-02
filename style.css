@@ -232,7 +232,7 @@ a.button {
 /* Fila con asignatura + nota */
 .cv-grade {
   display: grid;
-  grid-template-columns: 1fr min-content; /* primera flexible, segunda lo justo */
+  grid-template-columns: 1fr auto; /* primera flexible, segunda lo justo */
   gap: 1rem;
   font-size: 0.82rem;
   color: #555;
