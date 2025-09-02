@@ -61,7 +61,7 @@ header a:hover {
   justify-content: flex-end; /* Alinea el contenido abajo */
   align-items: flex-start;   /* Alineado a la izquierda */
   padding: 2rem;             /* Espacio interior */
-  margin-top: 18rem;                 /* Centrado horizontal del container */
+  margin-top: 20rem;                 /* Centrado horizontal del container */
   margin-left: 2rem;         /* Ajusta según tu gusto */
   text-align: justify;
 }
@@ -90,7 +90,7 @@ h1  {
   margin-bottom: 0.5rem;
   font-style: italic;
   text-align: justify;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 /* Botones en inicio */
@@ -309,7 +309,7 @@ footer {
 
   .cv-section-title,
   .cv-section-title-grades {
-    margin: 5rem 0 1.5rem; /* más separación arriba y abajo */
+    margin: 3.5rem 0 1.5rem; /* más separación arriba y abajo */
   }
   
   .cv-row {
