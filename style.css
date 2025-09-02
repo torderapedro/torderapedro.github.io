@@ -157,6 +157,16 @@ a.button {
   display: inline-block;
   padding-bottom: 0.3rem;
 }
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1.5rem;
+  text-align: left;
+  color: var(--text);
+  border-bottom: 2px solid var(--text-light);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
 
 
 
