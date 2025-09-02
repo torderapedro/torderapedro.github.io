@@ -1,0 +1,29 @@
+/* ====================================== */
+/* MENÚ SUPERIOR                          */
+/* ====================================== */
+
+header {
+  display: flex;
+  justify-content: flex-end; /*Alinea los elementos horizontalmente a la derecha*/
+  align-items: center; /*Centra los elementos verticalmente dentro del header.*/
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  font-size: 0.95rem;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+header a {
+  text-decoration: none; /*Quita subrayado de los enlaces*/
+  color: var(--text);
+  font-weight: 400;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+header a:hover { /*Cuando el cursor pasa sobre un enlace*/
+  opacity: 1;
+  text-decoration: underline;
+}
