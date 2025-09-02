@@ -90,7 +90,7 @@ h1  {
   margin-bottom: 0.5rem;
   font-style: italic;
   text-align: justify;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 /* Botones en inicio */
@@ -345,5 +345,6 @@ footer {
 
   .cv-desc {
     text-align: justify;             /* Mejor en móvil que quede alineado a la izquierda */
+    font-size: 0.85rem;
   }
 }
