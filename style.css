@@ -242,12 +242,13 @@ a.button {
 /* Columna de asignatura */
 .cv-grade .subject {
   text-align: left;
+  font-weight: 300;
 }
 
 /* Columna de nota */
 .cv-grade .mark {
   justify-self: end;  /* pega las notas al borde derecho del aside */
-  font-weight: 600;
+  font-weight: 500;
 }
 
 
