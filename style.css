@@ -266,7 +266,7 @@ footer {
 /* ====================================== */
 
 /* Tablets y móviles grandes */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .cv-grid {
     grid-template-columns: 1fr; /* CV a una sola columna */
     gap: 2rem;
@@ -297,6 +297,12 @@ footer {
   }
 }
 @media (max-width: 700px) {
+  
+  .cv-section-title,
+  .cv-section-title-grades {
+    margin: 3rem 0 1.5rem; /* más separación arriba y abajo */
+  }
+  
   .cv-row {
     grid-template-columns: 1fr;   /* Solo una columna */
   }
