@@ -117,10 +117,10 @@ a.button {
 /* GRID DE CARDS (Portfolio o Blog) */
 /* ====================================== */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 260px); /* cards fijas */
+   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* ancho mínimo de cada card, pero flexible */
   gap: 1rem;
-  justify-content: center; /* centra las filas */
+  justify-items: start;   /* alinea las cards a la izquierda */
 }
 
 .card {
