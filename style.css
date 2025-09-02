@@ -263,7 +263,19 @@ footer {
     justify-content: center;  /* centra los botones horizontalmente */
   }
 }
+@media (max-width: 700px) {
+  .cv-row {
+    grid-template-columns: 1fr;   /* Solo una columna */
+  }
 
+  .cv-date {
+    text-align: left;             /* Fecha alineada a la izquierda */
+    margin-bottom: 0.3rem;        /* Pequeño espacio antes de la descripción */
+    font-size: 0.85rem;           /* Opcional: un pelín más pequeña */
+    color: #555;                  /* Opcional: un poco más clara */
+  }
+
+  .cv-desc {
+    text-align: left;             /* Mejor en móvil que quede alineado a la izquierda */
   }
 }
-
