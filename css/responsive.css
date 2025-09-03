@@ -146,11 +146,10 @@
       "details"
       "description";           
   margin: 1rem 1rem;        /* márgenes laterales consistentes con otras secciones */
-  row-gap: 0.25rem;
 }
 
 .project-details {
-  margin-bottom: 0.5rem;   /* separación entre datos y descripción */
+  margin-bottom: 0rem;   /* separación entre datos y descripción */
 }
 
 .project-description p {
