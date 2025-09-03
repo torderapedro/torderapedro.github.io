@@ -8,7 +8,7 @@
   grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr)); /* ancho mínimo de cada card, pero flexible */
   gap: 1rem;
   justify-items: start;   /* alinea las cards a la izquierda */
-  margin: 6 0 0 2rem;
+  margin: 6rem 0 0 2rem;
 }
 
 /* Card individual*/
