@@ -118,21 +118,23 @@
   border-color: var(--text);
 }
 
-/* Botón de descarga */
+/* Botón de descarga centrado al final */
 .project-download {
-  margin-top: 1.5rem;
+  text-align: center;
+  margin: 3rem 0; /* espacio arriba y abajo */
 }
 
-.project-download a {
-  text-decoration: none;
-  color: #fff;
-  background-color: var(--primary);
+.project-download .button {
+  display: inline-block;
   padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
   font-weight: 600;
-  transition: background-color 0.2s;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--text);
+  background: none; /* sin fondo, igual que CV */
+  transition: color 0.2s;
 }
 
-.project-download a:hover {
-  background-color: #333;
+.project-download .button:hover {
+  color: var(--black); /* o el color que quieras para hover */
 }
