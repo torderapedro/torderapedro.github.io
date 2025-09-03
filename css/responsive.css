@@ -131,6 +131,10 @@
 
   /* ================= Project Info (Responsive) ================= */
 .project-info-grid {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+      "details"
+      "description";
   display: block;           /* apila descripción y datos verticalmente */
   margin: 2rem 1rem;        /* márgenes laterales consistentes con otras secciones */
 }
