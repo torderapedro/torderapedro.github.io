@@ -32,19 +32,10 @@
     <!-- Carrusel principal -->
     <div class="main-image-container">
       <img src="../proyectos/infraestructura/1.jpg" alt="Vista general del proyecto Infraestructura Situada">
+      <img src="../proyectos/infraestructura/2.jpg" alt="Detalle 1">
+      <img src="../proyectos/infraestructura/3.jpg" alt="Detalle 2">
       <button class="prev">&#10094;</button>
       <button class="next">&#10095;</button>
-    </div>
-
-    <!-- Galería de imágenes adicionales (opcional) -->
-    <div class="project-gallery">
-      <div class="main-image-container">
-        <img src="../proyectos/infraestructura/2.jpg" alt="Detalle 1">
-      </div>
-      <div class="main-image-container">
-        <img src="../proyectos/infraestructura/3.jpg" alt="Detalle 2">
-      </div>
-      <!-- Añadir más imágenes según sea necesario -->
     </div>
 
     <!-- Botón de descarga -->
@@ -59,30 +50,37 @@
     2025 © Pedro Tordera Arillo
   </footer>
 
-  <!-- JS opcional para carrusel -->
+  <!-- JS para carrusel -->
   <script>
-    const containers = document.querySelectorAll('.main-image-container');
+    const slides = document.querySelectorAll('.main-image-container img');
+    const prevBtn = document.querySelector('.main-image-container .prev');
+    const nextBtn = document.querySelector('.main-image-container .next');
 
-    containers.forEach(container => {
-      const prev = container.querySelector('.prev');
-      const next = container.querySelector('.next');
-      const img = container.querySelector('img');
+    let currentIndex = 0;
 
-      let images = [img.src]; // Array con imágenes, si quieres añadir más puedes sustituirlo
-      let currentIndex = 0;
-
-      prev && prev.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        img.src = images[currentIndex];
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = (i === index) ? 'block' : 'none';
       });
+    }
 
-      next && next.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % images.length;
-        img.src = images[currentIndex];
-      });
-    });
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    // Inicializa mostrando la primera imagen
+    showSlide(currentIndex);
+
+    // Eventos de botones
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
   </script>
 
 </body>
 </html>
-
