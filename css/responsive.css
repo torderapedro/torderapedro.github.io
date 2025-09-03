@@ -21,7 +21,7 @@
 
   /* ================= Home ================= */
   .home-container {
-    height: 100dvh;           /* Ocupa la pantalla completa */
+    height: 80dvh;           /* Ocupa la pantalla completa */
     /*margin-top: 0rem;       /* permite que se quede abajo */
     margin-left: 1rem;      /* alineado a la izquierda */
     margin-right: 1rem;     /* un poco de espacio lateral */*/
