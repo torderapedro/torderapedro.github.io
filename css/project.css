@@ -75,6 +75,7 @@
   grid-template-areas: "description details";
   gap: 2rem; /* espacio entre columnas */
   margin: 2rem 0;
+  align-items: start;
 }
 
 /* Columna de descripción */
@@ -105,7 +106,7 @@
 }
 
 .project-details li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 /* Miniaturas debajo del carrusel */
