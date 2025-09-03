@@ -105,6 +105,7 @@
     height: 18.75rem;
     padding-bottom: 100%; /* crea marco cuadrado */
     overflow: hidden;
+    margin: 0;
     position: relative; /* necesario si quieres posicionar flechas */
   }
 
