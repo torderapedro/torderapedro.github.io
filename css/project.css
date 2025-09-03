@@ -89,6 +89,10 @@
   word-break: normal;
 }
 
+.project-description p {
+  margin: 0 0 1rem 0;       /* espacio entre párrafos */
+}
+
 /* Columna de datos principales */
 .project-details {
   grid-area: details;
