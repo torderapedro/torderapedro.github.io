@@ -140,12 +140,13 @@
 
   /* ================= Project Info (Responsive) ================= */
 .project-info-grid {
+  display: grid; /* apila descripción y datos verticalmente */
   grid-template-columns: 1fr;
   grid-template-areas:
       "details"
-      "description";
-  display: grid;           /* apila descripción y datos verticalmente */
-  margin: 2rem 1rem;        /* márgenes laterales consistentes con otras secciones */
+      "description";           
+  margin: 1rem 1rem;        /* márgenes laterales consistentes con otras secciones */
+  row-gap: 0.25rem;
 }
 
 .project-details {
@@ -154,8 +155,9 @@
 
 .project-description p {
   text-align: justify;      /* opcional: mejor lectura en móvil */
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 0.5rem; /* menos espacio entre párrafos en móvil */
+  font-weight: 300;
 }
 
 }
