@@ -83,6 +83,7 @@
   grid-area: description;
   font-size: 1rem;
   padding: 1rem;
+  font-weight: 300;
   line-height: 1.6;
   text-align: justify;
   hyphens: auto;
@@ -101,6 +102,7 @@
   padding: 1rem;
   border-radius: 0.25rem;
   text-align: justify;
+  font-weight: 300;
 }
 
 .project-details ul {
