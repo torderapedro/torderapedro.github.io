@@ -128,4 +128,20 @@
     width: 100%;
     text-align: center;
   }
+
+  /* ================= Project Info (Responsive) ================= */
+.project-info {
+  display: block;           /* apila descripción y datos verticalmente */
+  margin: 2rem 1rem;        /* márgenes laterales consistentes con otras secciones */
+}
+
+.project-data {
+  margin-bottom: 1.5rem;   /* separación entre datos y descripción */
+}
+
+.project-description p {
+  text-align: justify;      /* opcional: mejor lectura en móvil */
+  line-height: 1.6;
+}
+
 }
