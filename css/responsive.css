@@ -135,7 +135,7 @@
   grid-template-areas:
       "details"
       "description";
-  display: block;           /* apila descripción y datos verticalmente */
+  display: grid;           /* apila descripción y datos verticalmente */
   margin: 2rem 1rem;        /* márgenes laterales consistentes con otras secciones */
 }
 
