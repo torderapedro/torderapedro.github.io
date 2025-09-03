@@ -67,13 +67,15 @@
 /* Contenedor de info del proyecto en dos columnas */
 .project-info-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* columna izquierda doble tamaño que la derecha */
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "description details";
   gap: 2rem; /* espacio entre columnas */
   margin: 2rem 0;
 }
 
 /* Columna de descripción */
 .project-description {
+  grid-area: description;
   font-size: 1rem;
   line-height: 1.6;
   text-align: justify;
@@ -81,6 +83,7 @@
 
 /* Columna de datos principales */
 .project-details {
+  grid-area: details;
   font-size: 0.95rem;
   background: none; /* opcional: un fondo ligero */
   padding: 1rem;
