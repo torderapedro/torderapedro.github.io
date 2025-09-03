@@ -155,6 +155,7 @@
 .project-description p {
   text-align: justify;      /* opcional: mejor lectura en móvil */
   line-height: 1.6;
+  margin-bottom: 0.5rem; /* menos espacio entre párrafos en móvil */
 }
 
 }
