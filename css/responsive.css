@@ -85,7 +85,7 @@
   /* ================= Portfolio / Blog ================= */
   .container {
     margin: 0 1rem;
-    padding: 0;
+    padding: 1rem;
   }
 
   .grid {
