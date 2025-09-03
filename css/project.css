@@ -80,6 +80,8 @@
   padding: 1rem;
   line-height: 1.6;
   text-align: justify;
+  hyphens: auto;
+  word-break: normal;
 }
 
 /* Columna de datos principales */
