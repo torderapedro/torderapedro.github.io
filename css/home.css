@@ -5,7 +5,7 @@
 /* Bloque inicio */
 .home-container {
   max-width: 40rem;
-  min-height: 100dvh;             /* Ocupa la pantalla completa */
+  min-height: 80dvh;             /* Ocupa la pantalla completa */
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* Alinea el contenido abajo */
