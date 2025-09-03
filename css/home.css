@@ -35,13 +35,14 @@
 /* Texto introductorio */
 .home-container .lead {
   font-size: clamp(0.8rem, 2vw, 1.2rem);
-  opacity: 0.85;
+  opacity: 0.65;
   margin-bottom: 0.5rem;
   font-style: italic;
   text-align: justify;
   font-weight: 300;
   hyphens: auto; /*divide palabras largas según idioma*/
   word-break: normal; /*rompe solo si es necesario*/
+  color: var(--text);
 }
 
 /* Botones en inicio */
