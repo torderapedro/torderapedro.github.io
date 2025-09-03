@@ -46,6 +46,7 @@
 
   .lead {
     font-size: clamp(0.8rem, 3vw, 1.2rem);
+    opacity: 0.85;
   }
 
 
