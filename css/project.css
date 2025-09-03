@@ -64,6 +64,38 @@
   transform: translateY(-50%) scale(1.1);
 }
 
+/* Contenedor de info del proyecto en dos columnas */
+.project-info-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* columna izquierda doble tamaño que la derecha */
+  gap: 2rem; /* espacio entre columnas */
+  margin: 2rem 0;
+}
+
+/* Columna de descripción */
+.project-description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Columna de datos principales */
+.project-details {
+  font-size: 0.95rem;
+  background: var(--bg-light); /* opcional: un fondo ligero */
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.project-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-details li {
+  margin-bottom: 0.75rem;
+}
+
 /* Miniaturas debajo del carrusel */
 .thumbnails {
   display: flex;
