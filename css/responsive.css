@@ -130,12 +130,12 @@
   }
 
   /* ================= Project Info (Responsive) ================= */
-.project-info {
+.project-info-grid {
   display: block;           /* apila descripción y datos verticalmente */
   margin: 2rem 1rem;        /* márgenes laterales consistentes con otras secciones */
 }
 
-.project-data {
+.project-details {
   margin-bottom: 1.5rem;   /* separación entre datos y descripción */
 }
 
