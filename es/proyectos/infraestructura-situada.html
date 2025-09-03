@@ -11,6 +11,27 @@
   <link rel="stylesheet" href="/css/project.css">
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/css/responsive.css">
+  <style>
+    /* Miniaturas debajo del carrusel */
+    .thumbnails {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      justify-content: center;
+    }
+    .thumbnails img {
+      width: 80px;
+      height: 45px;
+      object-fit: cover;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      transition: border 0.2s;
+    }
+    .thumbnails img.active {
+      border-color: var(--text);
+    }
+  </style>
 </head>
 <body>
 
@@ -38,6 +59,13 @@
       <button class="next">&#10095;</button>
     </div>
 
+    <!-- Miniaturas -->
+    <div class="thumbnails">
+      <img src="../proyectos/infraestructura/1.jpg" alt="Vista general" class="active">
+      <img src="../proyectos/infraestructura/2.jpg" alt="Detalle 1">
+      <img src="../proyectos/infraestructura/3.jpg" alt="Detalle 2">
+    </div>
+
     <!-- Botón de descarga -->
     <div class="project-download">
       <a href="../portfolio/Infraestructura-Situada.pdf" download>Descargar Proyecto (PDF)</a>
@@ -55,12 +83,16 @@
     const slides = document.querySelectorAll('.main-image-container img');
     const prevBtn = document.querySelector('.main-image-container .prev');
     const nextBtn = document.querySelector('.main-image-container .next');
+    const thumbnails = document.querySelectorAll('.thumbnails img');
 
     let currentIndex = 0;
 
     function showSlide(index) {
       slides.forEach((slide, i) => {
         slide.style.display = (i === index) ? 'block' : 'none';
+      });
+      thumbnails.forEach((thumb, i) => {
+        thumb.classList.toggle('active', i === index);
       });
     }
 
@@ -74,12 +106,20 @@
       showSlide(currentIndex);
     }
 
-    // Inicializa mostrando la primera imagen
-    showSlide(currentIndex);
-
     // Eventos de botones
     nextBtn.addEventListener('click', nextSlide);
     prevBtn.addEventListener('click', prevSlide);
+
+    // Click en miniaturas
+    thumbnails.forEach((thumb, index) => {
+      thumb.addEventListener('click', () => {
+        currentIndex = index;
+        showSlide(currentIndex);
+      });
+    });
+
+    // Inicializa mostrando la primera imagen
+    showSlide(currentIndex);
   </script>
 
 </body>
