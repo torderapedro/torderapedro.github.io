@@ -58,8 +58,9 @@
 
 
 /* Estilo de links */
-/* Links dentro del CV */
-.cv-desc a.no-style-link {
+/* Enlaces normales y visitados */
+.cv-desc a.no-style-link:link,
+.cv-desc a.no-style-link:visited {
   color: inherit;          /* toma el color del texto normal */
   text-decoration: none;   /* sin subrayado */
   font-weight: 300;
@@ -70,12 +71,6 @@
 .cv-desc a.no-style-link:active {
   color: var(--black); 
   text-decoration: underline;
-}
-
-/* Visitados */
-.cv-desc a.no-style-link:visited {
-  color: inherit;          /* mantiene el color normal */
-  text-decoration: none;   /* mantiene sin subrayado */
 }
 
 
