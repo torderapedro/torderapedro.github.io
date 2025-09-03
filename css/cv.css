@@ -47,12 +47,13 @@
 }
 
 .cv-other-interests {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   opacity: 0.8;
   line-height: 1.6;
   color: #555;
   margin-bottom: 1.5rem;
   text-align: justify;
+  font-weight: 300
 }
 
 
