@@ -29,8 +29,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  display: none;
   cursor: pointer;
+}
+
+.main-image-container img.active {
+  display: block; /* Solo la imagen activa se muestra */
 }
 
 /* Botones de navegación del carrusel */
