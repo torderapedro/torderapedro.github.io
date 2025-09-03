@@ -147,7 +147,7 @@
 }
 
 .project-details {
-  margin-bottom: 1.5rem;   /* separación entre datos y descripción */
+  margin-bottom: 0.5rem;   /* separación entre datos y descripción */
 }
 
 .project-description p {
