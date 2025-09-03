@@ -76,14 +76,16 @@
 .project-description {
   font-size: 1rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* Columna de datos principales */
 .project-details {
   font-size: 0.95rem;
-  background: var(--bg-light); /* opcional: un fondo ligero */
+  background: none; /* opcional: un fondo ligero */
   padding: 1rem;
   border-radius: 0.25rem;
+  text-align: justify;
 }
 
 .project-details ul {
