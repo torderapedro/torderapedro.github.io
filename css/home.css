@@ -10,9 +10,9 @@
   flex-direction: column;
   justify-content: flex-end; /* Alinea el contenido abajo */
   align-items: flex-start;   /* Alineado a la izquierda */
-  padding: 2rem;             /* Espacio interior */
-  /*margin-top: 0rem;          
-  margin-left: 2rem;*/
+  padding: 0rem;             /* Espacio interior */
+  margin-top: 0rem;          
+  margin-left: 2rem;
   margin: 0;         
   text-align: justify;
   box-sizing: border-box;      /* Incluye padding en height */
