@@ -21,7 +21,7 @@
   max-width: 100%;
   aspect-ratio: 16/9;
   overflow: hidden;
-  border-radius: 0.375rem;
+  border-radius: 0;
 }
 
 /* Imagen dentro del contenedor */
