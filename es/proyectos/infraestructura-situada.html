@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infraestructura Situada — Pedro Tordera Arillo</title>
+  <meta name="description" content="Proyecto Infraestructura Situada — Portfolio de Pedro Tordera Arillo.">
+  <link rel="stylesheet" href="../css/reset-variables.css">
+  <link rel="stylesheet" href="../css/grid-cards.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="../index.html">Inicio</a>
+    <a href="../cv.html">CV</a>
+    <a href="../portfolio.html">Portfolio</a>
+    <a href="../blog.html">Blog</a>
+    <a href="../en/portfolio.html">EN</a>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+
+    <!-- Título del proyecto -->
+    <h1 class="project-title">Infraestructura Situada</h1>
+
+    <!-- Carrusel principal -->
+    <div class="main-image-container">
+      <img src="../portfolio/proj1-1.jpg" alt="Vista general del proyecto Infraestructura Situada">
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+
+    <!-- Galería de imágenes adicionales (opcional) -->
+    <div class="project-gallery">
+      <div class="main-image-container">
+        <img src="../portfolio/proj1-2.jpg" alt="Detalle 1">
+      </div>
+      <div class="main-image-container">
+        <img src="../portfolio/proj1-3.jpg" alt="Detalle 2">
+      </div>
+      <!-- Añadir más imágenes según sea necesario -->
+    </div>
+
+    <!-- Botón de descarga -->
+    <div class="project-download">
+      <a href="../portfolio/Infraestructura-Situada.pdf" download>Descargar Proyecto (PDF)</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    2025 © Pedro Tordera Arillo
+  </footer>
+
+  <!-- JS opcional para carrusel -->
+  <script>
+    const containers = document.querySelectorAll('.main-image-container');
+
+    containers.forEach(container => {
+      const prev = container.querySelector('.prev');
+      const next = container.querySelector('.next');
+      const img = container.querySelector('img');
+
+      let images = [img.src]; // Array con imágenes, si quieres añadir más puedes sustituirlo
+      let currentIndex = 0;
+
+      prev && prev.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        img.src = images[currentIndex];
+      });
+
+      next && next.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        img.src = images[currentIndex];
+      });
+    });
+  </script>
+
+</body>
+</html>
 
