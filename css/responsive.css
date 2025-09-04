@@ -170,6 +170,11 @@
   margin-bottom: 0.5rem; /* menos espacio entre párrafos en móvil */
   font-weight: 300;
 }
+  
+  .project-description strong,
+  .project-details strong {
+    font-weight: 600;
+}
 
   /* ============Ajustes específicos para tarjetas del blog=============== */
   .blog-card img {
