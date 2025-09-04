@@ -68,3 +68,47 @@
   display: inline-block;
   padding-bottom: 0.3rem;
 }
+
+/* ====================================== */
+/* ESTILOS ESPECÍFICOS BLOG */
+/* ====================================== */
+
+/* Contenedor extra dentro de cada card */
+.blog-card .blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* Título de la entrada */
+.blog-card .title a {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  text-align: left;
+}
+
+.blog-card .title a:hover {
+  text-decoration: underline;
+}
+
+/* Extracto / primeras líneas */
+.blog-card .excerpt {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--text-light);
+  text-align: left;
+  margin-top: 0.2rem;
+  max-height: 3.6rem; /* limita altura para evitar bloques enormes */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Imagen de portada más horizontal */
+.blog-card img {
+  aspect-ratio: 1 / 1;
+  border-radius: 2px;
+  object-fit: cover;
+}
