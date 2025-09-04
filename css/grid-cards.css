@@ -108,7 +108,7 @@
   word-break: break-word;
   overflow-wrap: break-word;
   margin-top: 0rem;
-  max-height: 4.2rem; /* limita altura para evitar bloques enormes */
+  max-height: 5rem; /* limita altura para evitar bloques enormes */
   overflow: hidden;
   text-overflow: ellipsis;
 }
