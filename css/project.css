@@ -115,8 +115,11 @@
   margin-bottom: 0.1rem;
 }
 
-.project-description strong,
-.project-details strong {
+.project-description p strong {
+  font-weight: 700;
+}
+
+.project-details li strong {
   font-weight: 700;
 }
 
