@@ -115,6 +115,11 @@
   margin-bottom: 0.1rem;
 }
 
+.project-description strong,
+.project-details strong {
+  font-weight: 700;
+}
+
 /* Miniaturas debajo del carrusel */
 .thumbnails {
   display: flex;
