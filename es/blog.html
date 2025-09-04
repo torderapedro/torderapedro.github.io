@@ -2,50 +2,81 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Blog — Pedro Tordera Arillo</title>
-  <meta name="description" content="Blog — Pedro Tordera Arillo.">
-  
-  <!-- Usamos el CSS de grid-cards -->
+  <meta name="description" content="Blog de Pedro Tordera Arillo — Artículos y reflexiones sobre arquitectura y proyectos.">
+
+  <!-- Estilos compartidos -->
   <link rel="stylesheet" href="../css/reset-variables.css">
-  <link rel="stylesheet" href="../css/grid-cards.css">
   <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/grid-cards.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body>
+  <!-- Menú superior -->
   <header>
-    <a href="index.html">Inicio</a>
+    <a href="home.html">Inicio</a>
     <a href="cv.html">CV</a>
     <a href="portfolio.html">Portfolio</a>
-    <a href="blog.html">Blog</a>
+    <a href="blog.html" class="active">Blog</a>
     <a href="../en/blog.html">EN</a>
   </header>
 
   <main class="container">
     <h1 class="page-title">Blog</h1>
+
+    <!-- GRID de entradas de blog -->
     <div class="grid">
+
       <!-- Entrada 1 -->
-      <div class="card">
-        <a href="entradas/entrada1.html">
-          <img src="../assets/blog1.jpg" alt="Entrada 1">
+      <article class="card blog-card">
+        <a href="blog/ciudad-resiliente.html">
+          <img src="../blog/ciudad-resiliente.jpg" alt="Ciudad resiliente">
         </a>
-        <div class="title">
-          <a href="entradas/entrada1.html">Entrada 1 — Título</a>
+        <div class="blog-content">
+          <h2 class="title">
+            <a href="blog/ciudad-resiliente.html">La ciudad resiliente</a>
+          </h2>
+          <p class="excerpt">
+            La resiliencia urbana es clave para afrontar los retos climáticos y sociales. En este artículo analizamos
+            estrategias para una ciudad más habitable y sostenible...
+          </p>
         </div>
-      </div>
+      </article>
 
       <!-- Entrada 2 -->
-      <div class="card">
-        <a href="entradas/entrada2.html">
-          <img src="../assets/blog2.jpg" alt="Entrada 2">
+      <article class="card blog-card">
+        <a href="blog/materiales-circulares.html">
+          <img src="../blog/materiales-circulares.jpg" alt="Materiales circulares">
         </a>
-        <div class="title">
-          <a href="entradas/entrada2.html">Entrada 2 — Título</a>
+        <div class="blog-content">
+          <h2 class="title">
+            <a href="blog/materiales-circulares.html">Materiales circulares en arquitectura</a>
+          </h2>
+          <p class="excerpt">
+            Descubre cómo el diseño circular transforma la construcción, reduciendo residuos y fomentando
+            la reutilización en la industria arquitectónica...
+          </p>
         </div>
-      </div>
+      </article>
 
-      <!-- Añadir más entradas aquí -->
+      <!-- Entrada 3 -->
+      <article class="card blog-card">
+        <a href="blog/habitar-flexible.html">
+          <img src="../blog/habitar-flexible.jpg" alt="Viviendas flexibles">
+        </a>
+        <div class="blog-content">
+          <h2 class="title">
+            <a href="blog/habitar-flexible.html">Hacia un habitar flexible</a>
+          </h2>
+          <p class="excerpt">
+            Las viviendas deben adaptarse a las necesidades cambiantes de sus habitantes. Exploramos
+            estrategias de diseño para espacios flexibles y sostenibles...
+          </p>
+        </div>
+      </article>
+
     </div>
   </main>
 
