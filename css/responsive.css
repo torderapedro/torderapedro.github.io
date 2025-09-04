@@ -101,6 +101,15 @@
 
   /* ================= Main Image (Carrusel) ================= */
 
+  .container .project-title-main {
+      font-size: clamp(1.2rem, 5vw, 1.8rem);
+      margin: 2rem 1rem 0.5rem;
+      padding: 0 2rem;
+      hyphens: auto;
+      word-break: normal;
+      text-align: justify;
+  }
+
   .project-title-main {
     font-size: clamp(1.2rem, 5vw, 1.8rem);
     margin: 2rem 1rem 0.5rem 1rem;
@@ -108,7 +117,6 @@
     hyphens: auto;
     word-break: normal;
     text-align: justify;
-    
   }
     
   .main-image-container {
