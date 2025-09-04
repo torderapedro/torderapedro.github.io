@@ -186,6 +186,7 @@
   .blog-title-main {
     font-size: clamp(1.2rem, 5vw, 1.8rem);
     padding: 0 0rem;
+    margin: 2rerm 0 0.5rem 0;
   }
 
   .blog-content-container {
