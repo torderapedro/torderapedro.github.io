@@ -105,6 +105,9 @@
     font-size: clamp(0.8rem, 5vw, 1.2rem);
     margin: 2rem 1rem 0.5rem 1rem;
     padding: 0 2rem;
+    hyphens: auto;
+    word-break: normal;
+    
   }
     
   .main-image-container {
