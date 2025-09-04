@@ -103,11 +103,11 @@
 
   .container .project-title-main {
       font-size: clamp(1.2rem, 5vw, 1.8rem);
-      margin: 2rem 1rem 0.5rem;
+      margin: 2rem 2rem 0.5rem;
       padding: 0 1rem;
       hyphens: auto;
       word-break: normal;
-      text-align: left;
+      text-align: justify;
   }
 
   .project-title-main {
@@ -116,7 +116,7 @@
     padding: 0 1rem;
     hyphens: auto;
     word-break: normal;
-    text-align: left;
+    text-align: justify;
   }
     
   .main-image-container {
@@ -157,6 +157,7 @@
       "details"
       "description";           
   margin: 1rem 1rem;        /* márgenes laterales consistentes con otras secciones */
+  gap: 0.5rem;
 }
 
 .project-details {
