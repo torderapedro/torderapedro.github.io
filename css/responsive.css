@@ -159,4 +159,26 @@
   font-weight: 300;
 }
 
+  /* ============Ajustes específicos para tarjetas del blog=============== */
+  .blog-card img {
+    aspect-ratio: 1 / 1; /* mantiene formato horizontal */
+    border-radius: 4px;
+  }
+
+  .blog-card .title a {
+    font-size: 1rem;
+  }
+
+  .blog-card .excerpt {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    max-height: 4rem; /* un poco más de texto visible en móvil */
+  }
+
+  /* Ajustar títulos principales */
+  .page-title {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    margin: 1.5rem 0 1rem;
+    padding: 0 0.5rem;
+  }
 }
