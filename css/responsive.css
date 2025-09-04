@@ -172,7 +172,7 @@
   .blog-card .excerpt {
     font-size: 0.85rem;
     line-height: 1.4;
-    max-height: 4rem; /* un poco más de texto visible en móvil */
+    max-height: 5rem; /* un poco más de texto visible en móvil */
   }
 
   /* Ajustar títulos principales */
