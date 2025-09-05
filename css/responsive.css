@@ -178,6 +178,11 @@
     font-weight: 600;
 }
 
+  .thumbnails {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Miniaturas un poco más grandes en móvil */
+    padding: 0 1rem;
+  }
+
   /* ============Ajustes específicos para tarjetas del blog=============== */
   .blog-card img {
     aspect-ratio: 1 / 1; /* mantiene formato horizontal */
