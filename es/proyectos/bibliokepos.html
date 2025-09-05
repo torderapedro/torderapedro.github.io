@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibliokepos — Luces de Barrio</title>
+  <meta name="description" content="Proyecto Infraestructura Situada — Portfolio de Pedro Tordera Arillo.">
+  
+  <link rel="stylesheet" href="/css/reset-variables.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/grid-cards.css">
+  <link rel="stylesheet" href="/css/project.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  
+  <style>
+    /* Miniaturas debajo del carrusel */
+    .thumbnails {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(45px, auto));
+      gap: 0.5rem;
+      margin-top: 1rem;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    .thumbnails img {
+      width: 50px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      transition: border 0.2s;
+    }
+    .thumbnails img.active {
+      border-color: var(--text);
+    }
+  </style>
+</head>
+  
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="../home.html">Inicio</a>
+    <a href="../cv.html">CV</a>
+    <a href="../portfolio.html">Portfolio</a>
+    <a href="../blog.html">Blog</a>
+    <a href="/en/projects/project.html">EN</a>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+
+    <!-- Título del proyecto -->
+    <h1 class="project-title-main">Bibliokepos. Prototipos mobiliarios</h1>
+
+    <!-- Carrusel principal -->
+    <div class="main-image-container">
+      <img src="../proyectos/bibliokepos/1.webp" alt="Vista general del proyecto Infraestructura Situada">
+      <img src="../proyectos/bibliokepos/2.webp" alt="Detalle 1">
+      <img src="../proyectos/bibliokepos/3.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/4.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/5.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/6.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/7.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/8.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/9.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/10.webp" alt="Detalle 2">
+      
+      <button class="prev">&#8637;</button>
+      <button class="next">&#8640;</button>
+    </div>
+
+     <!-- Miniaturas -->
+    <div class="thumbnails">
+      <img src="../proyectos/bibliokepos/m1.webp" alt="Vista general" class="active">
+      <img src="../proyectos/bibliokepos/m2.webp" alt="Detalle 1">
+      <img src="../proyectos/bibliokepos/m3.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/m4.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/m5.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/m6.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/m7.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/m8.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/m9.webp" alt="Detalle 2">
+      <img src="../proyectos/bibliokepos/m10.webp" alt="Detalle 2">
+    </div>
+
+    <!-- Dos columnas de información tipo CV -->
+  <div class="project-info-grid">
+
+    <!-- Columna izquierda: descripción larga -->
+    <div class="project-description">
+      <p>
+        Este proyecto explora la integración de la infraestructura urbana con el entorno natural,
+        buscando soluciones sostenibles y funcionales que mejoren la calidad de vida de los usuarios.
+      </p>
+      <p>
+        La propuesta incluye espacios de interacción comunitaria, zonas verdes y optimización de recursos.
+        El proyecto se ha desarrollado dentro del marco académico con la colaboración de diferentes disciplinas.
+        La propuesta incluye espacios de interacción comunitaria, zonas verdes y optimización de recursos.
+        El proyecto se ha desarrollado dentro del marco académico con la colaboración de diferentes disciplinas.
+        La propuesta incluye espacios de interacción comunitaria, zonas verdes y optimización de recursos.
+        El proyecto se ha desarrollado dentro del marco académico con la colaboración de diferentes disciplinas.
+        La propuesta incluye espacios de interacción comunitaria, zonas verdes y optimización de recursos.
+        El proyecto se ha desarrollado dentro del marco académico con la colaboración de diferentes disciplinas.
+      </p>
+    </div>
+
+    <!-- Columna derecha: datos principales -->
+    <div class="project-details">
+      <ul>
+        <li><strong>Título:</strong> Bibliokepos</li>
+        <li><strong>Localización:</strong> Biblioteca de Torreblanca, Sevilla</li>
+        <li><strong>Fecha:</strong> 2023</li>
+        <li><strong>Participación:</strong> Miembro del equipo creador</li>
+        <li><strong>Tipo de proyecto:</strong> Workshop. Construido</li>
+        <li><strong>Publicado:</strong> VV. AA. (2023). <i>Galerías 01: Anuario de la 
+          Escuela Técnica Superior de Arquitectura de Sevilla.</i> Asimétricas Ediciones. 
+          ISBN 978-84-19050-91-5.</li>
+        <li><strong>Premios:</strong> Nominado a los premios S+R+ARTS 2024 y 
+          finalista en la XIII BIAU: CLIMAS</li>
+      </ul>
+    </div>
+
+  </div>
+
+    <!-- Botón de descarga -->
+    <div class="project-download">
+      <a href="../portfolio/bibliokepos.pdf" class="button" download>Dossier Bibliokepos</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    2025 © Pedro Tordera Arillo
+  </footer>
+
+  <!-- JS para carrusel -->
+  <script>
+    const slides = document.querySelectorAll('.main-image-container img');
+    const prevBtn = document.querySelector('.main-image-container .prev');
+    const nextBtn = document.querySelector('.main-image-container .next');
+    const thumbnails = document.querySelectorAll('.thumbnails img');
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = (i === index) ? 'block' : 'none';
+      });
+      thumbnails.forEach((thumb, i) => {
+        thumb.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    // Eventos de botones
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Click en miniaturas
+    thumbnails.forEach((thumb, index) => {
+      thumb.addEventListener('click', () => {
+        currentIndex = index;
+        showSlide(currentIndex);
+      });
+    });
+
+    // Inicializa mostrando la primera imagen
+    showSlide(currentIndex);
+  </script>
+
+</body>
+</html>
