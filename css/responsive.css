@@ -181,7 +181,7 @@
 }
 
   .thumbnails {
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Miniaturas un poco más grandes en móvil */
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Miniaturas un poco más grandes en móvil */
     padding: 0 1rem;
     gap: 0.5rem;
     justify-content: center;
