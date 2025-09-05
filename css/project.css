@@ -126,14 +126,16 @@
 /* Miniaturas debajo del carrusel */
 .thumbnails {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
   gap: 0.5rem;
   margin-top: 1rem;
   justify-content: center;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .thumbnails img {
-  width: 45px;
+  width: 50px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   cursor: pointer;
