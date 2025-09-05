@@ -176,6 +176,12 @@
   .project-description p strong {
     font-weight: 600;
 }
+
+  .project-details li {
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    opacity: 0.85;
+}
+  
   .project-details li strong {
     font-weight: 600;
 }
