@@ -169,3 +169,19 @@
 .project-download .button:hover {
   color: var(--black); /* o el color que quieras para hover */
 }
+
+/* Estilo de links */
+/* Enlaces normales y visitados */
+.cv-desc a.no-style-link:link,
+.cv-desc a.no-style-link:visited {
+  color: inherit;          /* toma el color del texto normal */
+  text-decoration: none;   /* sin subrayado */
+  font-weight: 300;
+}
+
+/* Hover y active */
+.cv-desc a.no-style-link:hover,
+.cv-desc a.no-style-link:active {
+  color: var(--black); 
+  text-decoration: underline;
+}
