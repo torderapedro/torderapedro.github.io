@@ -1,15 +1,18 @@
 /* ====================================== */
-/* GRID DE CARDS (General) */
+/* CONTENEDOR ESPECÍFICO DEL PORTFOLIO */
 /* ====================================== */
+.portfolio-container {
+  max-width: 68.75rem; /* Limita el ancho máximo del contenedor a 1100px */
+  margin: 5rem auto 0 auto; /* Centra el contenedor y le da un margen superior de 5rem */
+  padding: 0 2rem; /* Añade un padding horizontal para que el contenido no pegue a los bordes de la ventana en pantallas muy anchas */
+}
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr));
   gap: 2rem;
   justify-items: start;
-  margin: 5rem auto 0 auto;
   align-items: start;
-  max-width: 68.75rem;
 }
 
 /* Card individual*/
