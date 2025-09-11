@@ -1,0 +1,71 @@
+/* ====================================== */
+/* GRID DE CARDS (General) */
+/* ====================================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr));
+  gap: 1rem;
+  justify-items: start;
+  margin: 5rem 2rem 0 2rem;
+  align-items: start;
+}
+
+/* Card individual*/
+.card {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  gap: 0.6rem;
+  background: transparent;
+}
+
+/* Estilos de imagen (aplicable a ambos: portfolio y blog) */
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* ====================================== */
+/* ESTILOS ESPECÍFICOS PORTFOLIO */
+/* ====================================== */
+
+/* Oculta y posiciona el título del portfolio */
+.card .title {
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+  
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Muestra el título al pasar el cursor */
+.card:hover .title {
+  opacity: 1;
+  visibility: visible;
+  bottom: 0.5rem;
+}
+
+/* Estilos de enlace para el título del portfolio */
+.card .title a,
+.card .title a:visited {
+  font-size: 0.95rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
