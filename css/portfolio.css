@@ -5,10 +5,11 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr));
-  gap: 1rem;
+  gap: 2rem;
   justify-items: start;
-  margin: 5rem 2rem 0 2rem;
+  margin: 5rem auto 0 auto;
   align-items: start;
+  max-width: 1200px;
 }
 
 /* Card individual*/
