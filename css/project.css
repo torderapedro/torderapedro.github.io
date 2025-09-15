@@ -67,6 +67,14 @@
   margin: 0 0 1rem 0;        /* espacio entre párrafos */
 }
 
+/* Asegura que las imágenes dentro de la descripción se ajusten a su contenedor */
+.project-description img {
+  max-width: 100%; /* La imagen no superará el ancho de la columna */
+  height: auto;   /* Mantiene la proporción original */
+  display: block; /* Elimina el espacio extra que a veces tienen las imágenes */
+  margin: 1rem 0; /* Agrega espacio arriba y abajo para separarla del texto */
+}
+
 /* Columna de datos principales */
 .project-details {
   grid-area: details;
