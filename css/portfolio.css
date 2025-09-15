@@ -50,8 +50,9 @@
   visibility: hidden;
   transition: opacity 0.3s ease, bottom 0.3s ease;
   
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
   color: black;
+  height: 100%
   padding: 0.75rem;
   box-sizing: border-box;
   text-align: center;
@@ -64,7 +65,6 @@
   opacity: 1;
   visibility: visible;
   bottom: 0.5rem;
-  height: 100%;
 }
 
 /* Estilos de enlace para el título del portfolio */
