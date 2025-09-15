@@ -1,24 +1,23 @@
 /* ====================================== */
-/* HOME / INICIO */
+/* HOME / INICIO                          */
 /* ====================================== */
 
 /* Bloque inicio */
 .home-container {
   max-width: 40rem;
-  min-height: 80dvh;             /* Ocupa la pantalla completa */
+  min-height: 80dvh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Alinea el contenido abajo */
-  align-items: flex-start;   /* Alineado a la izquierda */
-  padding: 0rem;             /* Espacio interior */
-  margin: 0 0 0 2rem; /* Equivalente a margin-top: 0, margin-right: 0, margin-bottom: 0, margin-left: 2rem */          
+  justify-content: flex-end;
+  align-items: flex-start; 
+  padding: 0;
+  margin: 0 0 0 2rem;
   text-align: justify;
-  box-sizing: border-box;      /* Incluye padding en height */
 }
 
 /* Título principal */
-.home-container h1  {
-  font-size: clamp(1.2rem, 3vw, 2.5rem); 
+.home-container h1 {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
   font-weight: 700;
   margin: 0;
   color: var(--text);
@@ -29,7 +28,7 @@
   font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 400;
   color: var(--text);
-  margin: -0.2rem 0 0.5rem 0; /* Ajustado separación con título y texto */
+  margin: -0.2rem 0 0.5rem 0;
 }
 
 /* Texto introductorio */
@@ -40,8 +39,8 @@
   font-style: italic;
   text-align: justify;
   font-weight: 300;
-  hyphens: auto; /*divide palabras largas según idioma*/
-  word-break: normal; /*rompe solo si es necesario*/
+  hyphens: auto;
+  word-break: normal;
   color: var(--text);
 }
 
@@ -55,14 +54,44 @@
   width: 100%;
 }
 
-/* Estilo de los enlaces*/
+/* Estilo de los enlaces */
 a.button {
   display: inline-block;
   text-decoration: none;
   padding: 0.5rem 0.9rem;
-  /*border: 1px solid rgba(0,0,0,0.15);
-  border-radius: 2px;*/
   font-size: 0.95rem;
   color: var(--text);
   font-weight: 700;
+}
+
+/* ====================================== */
+/* Estilos para móviles (Responsive)      */
+/* ====================================== */
+
+@media (max-width: 700px) {
+  .home-container {
+    min-height: 80dvh;
+    margin: 0 1rem; /* Margen lateral para móvil */
+    padding: 1.5rem 1rem; /* Padding interior */
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .home-grid {
+    justify-content: center; /* Centra los botones horizontalmente */
+  }
+
+  .home-container h1 {
+    font-size: clamp(1.2rem, 5vw, 2.5rem);
+  }
+
+  .subtitle {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    margin: -0.2rem 0 0.5rem 0;
+  }
+
+  .lead {
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    opacity: 0.85;
+  }
 }
