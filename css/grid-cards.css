@@ -1,7 +1,8 @@
 /* ====================================== */
-/* GRID DE CARDS (General) */
+/* BLOG - GRID DE ENTRADAS                */
 /* ====================================== */
 
+/* Contenedor y grid general del blog */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr));
@@ -11,97 +12,33 @@
   align-items: start;
 }
 
-/* Card individual*/
-.card {
-  position: relative; 
-  display: flex;
-  flex-direction: column;
-  font-weight: 700;
-  gap: 0.6rem;
-  background: transparent;
-}
-
-/* Estilos de imagen (aplicable a ambos: portfolio y blog) */
-.card img {
+/* Estilos de imagen */
+.blog-card img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 16/9; /* Aspect ratio más adecuado para entradas de blog */
   height: auto;
   object-fit: cover;
   border-radius: 2px;
 }
 
-/* ====================================== */
-/* ESTILOS ESPECÍFICOS PORTFOLIO */
-/* ====================================== */
-
-/* Oculta y posiciona el título del portfolio */
-.card .title {
-  position: absolute;
-  bottom: 0; 
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, bottom 0.3s ease;
-  
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 0.75rem;
-  box-sizing: border-box;
-  text-align: center;
-  font-size: 0.95rem;
+/* Card individual del blog */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background: transparent;
+  font-weight: 700;
 }
 
-/* Muestra el título al pasar el cursor */
-.card:hover .title {
-  opacity: 1;
-  visibility: visible;
-  bottom: 0.5rem;
-}
-
-/* Estilos de enlace para el título del portfolio */
-.card .title a,
-.card .title a:visited {
-  font-size: 0.95rem;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-}
-
-/* ====================================== */
-/* ESTILOS ESPECÍFICOS BLOG */
-/* ====================================== */
-
-/* Contenedor extra dentro de cada card */
-.blog-card .blog-content {
+/* Contenido dentro de la tarjeta */
+.blog-content {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
   min-height: 8rem;
 }
 
-/* Título de la entrada del blog (sobreescribe estilos de arriba si existe la clase blog-card) */
-.blog-card .title {
-  /* Restablece la posición a estática para que no se superponga */
-  position: static;
-  
-  /* Restablece la opacidad y visibilidad a sus valores normales */
-  opacity: 1;
-  visibility: visible;
-  
-  /* Elimina el fondo semi-transparente */
-  background: none;
-  
-  /* Restablece el color del texto al color principal */
-  color: var(--text);
-  
-  /* Alineación del texto a la izquierda como en el blog original */
-  text-align: left;
-}
-
-/* Estilos de enlace para el título del blog */
+/* Título de la entrada */
 .blog-card .title a {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -125,8 +62,39 @@
   hyphens: auto;
   word-break: break-word;
   overflow-wrap: break-word;
-  margin-top: 0rem;
+  margin-top: 0;
   max-height: 5rem;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* ====================================== */
+/* Estilos para móviles (Responsive)      */
+/* ====================================== */
+
+@media (max-width: 700px) {
+  .container {
+    padding: 2rem;
+    margin: 0;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+  }
+  
+  .blog-card img {
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+  }
+  
+  .blog-card .title a {
+    font-size: 1rem;
+  }
+  
+  .blog-card .excerpt {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    max-height: 5rem;
+  }
 }
