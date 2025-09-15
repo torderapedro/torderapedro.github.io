@@ -79,7 +79,8 @@
 .cv-date {
   text-align: right;
   font-weight: 300;
-  font-size: 0.88rem;
+  font-size: 0.8rem;
+  font-style: italic;
   color: var(--text-light); /* Usando la variable --text-light */
 }
 .cv-desc {
@@ -87,7 +88,7 @@
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--text-light); /* Usando la variable --text-light */
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* Skills */
