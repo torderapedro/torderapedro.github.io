@@ -1,9 +1,9 @@
 /* ====================================== */
-/* FOOTER */
+/* FOOTER                                 */
 /* ====================================== */
 
 footer {
-  margin: 3rem 0rem 1rem 0rem; /* top | right | bottom | left */
+  margin: 3rem auto 1rem; /* Margen superior | automático para centrar | inferior */
   text-align: center;
   opacity: 0.7;
   font-size: clamp(0.8rem, 1vw, 0.95rem);
