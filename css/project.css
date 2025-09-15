@@ -9,7 +9,7 @@
   margin: 2rem 0 1rem;
   padding: 0 1rem;
   color: var(--text);
-  border-bottom: 0.125rem solid var(--text-light);
+  /*border-bottom: 0.125rem solid var(--text-light);*/
   display: inline-block;
   padding-bottom: 0.1875rem;
   hyphens: auto;
