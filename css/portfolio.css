@@ -50,8 +50,8 @@
   visibility: hidden;
   transition: opacity 0.3s ease, bottom 0.3s ease;
   
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
+  background: white;
+  color: black;
   padding: 0.75rem;
   box-sizing: border-box;
   text-align: center;
@@ -64,6 +64,7 @@
   opacity: 1;
   visibility: visible;
   bottom: 0.5rem;
+  height: 100%;
 }
 
 /* Estilos de enlace para el título del portfolio */
@@ -71,6 +72,6 @@
 .card .title a:visited {
   font-size: 0.95rem;
   text-align: center;
-  color: white;
+  color: black;
   text-decoration: none;
 }
