@@ -154,10 +154,10 @@
 /* ====================================== */
 @media (max-width: 700px) {
   .cv-page {
-    margin: 0 1rem;
-    padding: 1rem;
+    padding: 0 1rem;
   }
   .cv-grid {
+    margin: 0 auto;
     grid-template-columns: 1fr; /* Pasar a una sola columna */
     gap: 2rem;
   }
