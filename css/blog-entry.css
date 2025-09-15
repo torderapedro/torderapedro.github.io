@@ -1,5 +1,5 @@
 /* ====================================== */
-/* ENTRADAS DE BLOG */
+/* ENTRADAS DE BLOG                       */
 /* ====================================== */
 
 /* Título principal */
@@ -7,7 +7,7 @@
   font-size: clamp(1.4rem, 3vw, 2.5rem);
   font-weight: 700;
   margin: 2rem 0 1rem;
-  padding: 0 0rem;
+  padding: 0; /* Eliminar el padding para que el border-bottom ocupe todo el ancho */
   color: var(--text);
   border-bottom: 0.125rem solid var(--text-light);
   display: inline-block;
@@ -29,8 +29,8 @@
 
 /* Contenedor general */
 .blog-content-container {
-  max-width: 800px; /* ancho cómodo para lectura */
-  margin: 0 auto; /* centrado */
+  max-width: 800px;
+  margin: 0 auto;
   padding: 0 1rem;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .blog-text p {
-  margin-bottom: 1.2rem; /* espacio entre párrafos */
+  margin-bottom: 1.2rem;
 }
 
 /* Subtítulos */
@@ -65,7 +65,7 @@
   color: var(--text);
 }
 
-/* Imagenes dentro del artículo */
+/* Imágenes dentro del artículo */
 .blog-text img {
   width: 100%;
   border-radius: 4px;
@@ -83,3 +83,26 @@
   margin: 1.5rem 0;
 }
 
+/* ====================================== */
+/* Estilos para móviles (Responsive)      */
+/* ====================================== */
+@media (max-width: 700px) {
+  .blog-title-main {
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
+    padding: 0;
+    margin: 2rem 0 0.5rem 0;
+  }
+  
+  .blog-content-container {
+    padding: 0 2rem;
+  }
+  
+  .blog-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .blog-text h2 {
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
+  }
+}
