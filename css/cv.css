@@ -171,11 +171,12 @@
   .cv-date {
     text-align: left;
     margin-bottom: 0.3rem;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: #555;
   }
   .cv-desc {
     text-align: justify;
     font-size: 0.85rem;
+    opacity: 0.85;
   }
 }
