@@ -1,5 +1,5 @@
 /* ====================================== */
-/* PÁGINA CV */
+/* PÁGINA CV                              */
 /* ====================================== */
 
 .cv-page {
@@ -13,6 +13,7 @@
   grid-template-columns: 2fr 1fr; /* izquierda ancha, derecha estrecha */
   gap: 3rem;
 }
+
 .cv-main, .cv-aside { min-width: 0; }
 
 /* Títulos de secciones */
@@ -22,7 +23,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.4px;
-  color: #333;
+  color: var(--black); /* Usando la variable --black */
   margin: 2rem 0 1rem;
   position: relative;
 }
@@ -41,7 +42,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.4px;
-  color: #666;
+  color: var(--text-light); /* Usando la variable --text-light */
   margin: 2rem 0 1rem;
   position: relative;
 }
@@ -49,29 +50,24 @@
 .cv-other-interests {
   font-size: 0.8rem;
   line-height: 1.6;
-  color: #555;
+  color: var(--text-light); /* Usando la variable --text-light */
   margin-bottom: 1.5rem;
   text-align: justify;
   font-weight: 300
 }
 
-
 /* Estilo de links */
-/* Enlaces normales y visitados */
 .cv-desc a.no-style-link:link,
 .cv-desc a.no-style-link:visited {
-  color: inherit;          /* toma el color del texto normal */
-  text-decoration: none;   /* sin subrayado */
+  color: inherit;
+  text-decoration: none;
   font-weight: 300;
 }
-
-/* Hover y active */
 .cv-desc a.no-style-link:hover,
 .cv-desc a.no-style-link:active {
-  color: var(--black); 
+  color: var(--black);  
   text-decoration: underline;
 }
-
 
 /* Filas de experiencia */
 .cv-row {
@@ -84,13 +80,13 @@
   text-align: right;
   font-weight: 300;
   font-size: 0.88rem;
-  color: #666;
+  color: var(--text-light); /* Usando la variable --text-light */
 }
 .cv-desc {
   text-align: justify;
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #666;
+  color: var(--text-light); /* Usando la variable --text-light */
   font-weight: 400;
 }
 
@@ -100,7 +96,7 @@
   display: block;
   font-size: 0.8rem;
   margin-bottom: 0.35rem;
-  color: #555;
+  color: var(--text-light); /* Usando la variable --text-light */
   font-weight: 300
 }
 .bar {
@@ -110,9 +106,9 @@
   overflow: hidden;
 }
 .fill {
-  background: #666;
+  background: #666; /* Considerar usar una variable, como var(--secondary) */
   height: 100%;
-  width: 0; /* Se asigna inline con style="width:70%" */
+  width: 0;
 }
 
 /* Fila con asignatura + nota */
@@ -121,7 +117,7 @@
   grid-template-columns: 1fr auto; /* primera flexible, segunda lo justo */
   gap: 1rem;
   font-size: 0.80rem;
-  color: #555;
+  color: var(--text-light); /* Usando la variable --text-light */
   padding: 0.2rem 0;
 }
 
@@ -133,14 +129,14 @@
 
 /* Columna de nota */
 .cv-grade .mark {
-  justify-self: end;  /* pega las notas al borde derecho del aside */
+  justify-self: end;
   font-weight: 500;
 }
 
-/* Botón de descarga centrado al final */
+/* Botón de descarga */
 .cv-download {
   text-align: center;
-  margin: 3rem 0; /* espacio arriba y abajo */
+  margin: 3rem 0;
 }
 .cv-download .button {
   display: inline-block;
@@ -150,4 +146,35 @@
   text-decoration: none;
   color: var(--text);
   background: none;
+}
+
+/* ====================================== */
+/* Estilos para móviles (Responsive)      */
+/* ====================================== */
+@media (max-width: 700px) {
+  .cv-page {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+  .cv-grid {
+    grid-template-columns: 1fr; /* Pasar a una sola columna */
+    gap: 2rem;
+  }
+  .cv-section-title,
+  .cv-section-title-grades {
+    margin: 3.5rem 0 1.5rem;
+  }
+  .cv-row {
+    grid-template-columns: 1fr; /* Solo una columna */
+  }
+  .cv-date {
+    text-align: left;
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+    color: #555;
+  }
+  .cv-desc {
+    text-align: justify;
+    font-size: 0.85rem;
+  }
 }
