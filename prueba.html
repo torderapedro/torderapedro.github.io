@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Proyectos</title>
+    <link rel="stylesheet" href="prueba.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1 class="project-title-main">Mi Proyecto de Ejemplo</h1>
+
+        <div class="main-image-container">
+            <img src="https://via.placeholder.com/1920x1080/0000FF/FFFFFF?text=Imagen+1" alt="Imagen 1 del proyecto">
+            <img src="https://via.placeholder.com/1920x1080/FF0000/FFFFFF?text=Imagen+2" alt="Imagen 2 del proyecto">
+            <img src="https://via.placeholder.com/1920x1080/008000/FFFFFF?text=Imagen+3" alt="Imagen 3 del proyecto">
+        </div>
+
+        <div class="thumbnails">
+            <img src="https://via.placeholder.com/50x50/0000FF/FFFFFF?text=1" alt="Miniatura 1" class="active">
+            <img src="https://via.placeholder.com/50x50/FF0000/FFFFFF?text=2" alt="Miniatura 2">
+            <img src="https://via.placeholder.com/50x50/008000/FFFFFF?text=3" alt="Miniatura 3">
+        </div>
+
+        <div id="lightbox-overlay">
+            <div id="lightbox-content">
+                <span class="close-btn">&times;</span>
+                <button id="lightbox-prev">&#10094;</button>
+                <img id="lightbox-image" src="" alt="">
+                <button id="lightbox-next">&#10095;</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="prueba.js"></script>
+</body>
+</html>
