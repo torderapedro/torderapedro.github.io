@@ -5,14 +5,13 @@
 /* Bloque inicio */
 .home-container {
   max-width: 40rem;
-  min-height: 80dvh;
+  min-height: 90dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: flex-start; 
   padding: 0;
   margin: auto;
-  text-align: left;
 }
 
 /* Título principal */
