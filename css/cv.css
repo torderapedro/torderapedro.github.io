@@ -91,6 +91,10 @@
   font-weight: 300;
 }
 
+.cv-desc strong {
+  font-weight: 600;
+}
+
 /* Skills */
 .skill { margin-bottom: 0.9rem; }
 .skill span {
