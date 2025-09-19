@@ -4,8 +4,8 @@
 
 .cv-page {
   max-width: var(--maxw);
-  margin: 0 1rem;
-  padding: 2rem 1rem;
+  margin: 0 auto;
+  padding: 2rem 2rem;
 }
 
 .cv-grid {
