@@ -63,8 +63,9 @@
   font-weight: 300;
 }
 
-/* Muestra el título al pasar el cursor */
-.card:hover .title {
+/* Muestra el título al pasar el cursor (escritorio) o al tocar (móvil) */
+.card:hover .title,
+.card:active .title {
   opacity: 1;
   visibility: visible;
 }
@@ -78,26 +79,5 @@
   text-decoration: none;
 }
 
-/* Escondemos el título que sale al pie de la imagen */
+/* Oculta el título duplicado en el HTML */
 .card a + .title {
-  display: none;
-}
-
-/* ====================================== */
-/* ESTILOS RESPONSIVOS                    */
-/* ====================================== */
-
-@media (max-width: 700px) {
-  /* Cambios para el contenedor principal y el grid */
-  .container {
-    max-width: 100%;
-    margin: 0;
-    padding: 2rem;
-  }
-  
-  .grid {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    margin: 0 auto;
-  }
-}
