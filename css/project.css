@@ -6,8 +6,9 @@
 .project-title-main {
   font-size: clamp(1.2rem, 2vw, 2rem);
   font-weight: 700;
-  margin: 2rem 0 1rem;
+  margin: 2rem auto 1rem;
   padding: 0 2rem;
+  max-width: var(--maxw);
   color: var(--text);
   display: inline-block;
   padding-bottom: 0.1875rem;
@@ -18,7 +19,7 @@
 /* Contenedor principal de imagen (carrusel) */
 .main-image-container {
   position: relative;
-  margin: 1rem 0rem;
+  margin: 1rem auto;
   padding: 0 2rem;
   width: 100%;
   max-width: var(--maxw);
@@ -46,7 +47,9 @@
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "description details";
   gap: 2rem;
-  margin: 2rem 1rem;
+  max-width: var(--maxw);
+  margin: 2rem auto;
+  padding: 0 2rem;
   align-items: start;
 }
 
@@ -106,17 +109,19 @@
 /* Miniaturas debajo del carrusel */
 .thumbnails {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
   gap: 0.5rem;
   margin-top: 1rem;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 2rem;
   box-sizing: border-box;
 }
 
 .thumbnails img {
-  width: 75px;
+  width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   cursor: pointer;
@@ -131,7 +136,9 @@
 /* Botón de descarga */
 .project-download {
   text-align: center;
-  margin: 3rem 0;
+  margin: 3rem auto;
+  max-width: var(--maxw);
+  padding: 0 2rem;
 }
 
 .project-download .button {
