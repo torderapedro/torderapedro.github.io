@@ -5,7 +5,7 @@
 /* Bloque inicio */
 .home-container {
   max-width: 40rem;
-  min-height: 70dvh;
+  min-height: 80dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
