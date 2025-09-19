@@ -5,7 +5,7 @@
 /* Bloque inicio */
 .home-container {
   max-width: 40rem;
-  min-height: 90dvh;
+  min-height: 80dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +18,7 @@
 .home-container h1 {
   font-size: clamp(1.2rem, 3vw, 2.5rem);
   font-weight: 700;
-  margin: 0;
+  margin: 5rem 0;
   text-align: justify;
   color: var(--text);
 }
