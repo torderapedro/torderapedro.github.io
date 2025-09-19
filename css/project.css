@@ -6,7 +6,7 @@
 .project-title-main {
   font-size: clamp(1.2rem, 2vw, 2rem);
   font-weight: 700;
-  margin: 2rem auto 1rem;
+  margin: 2rem auto;
   padding: 0 2rem;
   max-width: var(--maxw);
   color: var(--text);
@@ -57,7 +57,7 @@
 .project-description {
   grid-area: description;
   font-size: clamp(0.9rem, 1.2vw, 1rem);
-  padding: 1rem;
+  padding: 0 1rem;
   font-weight: 300;
   line-height: 1.6;
   text-align: justify;
