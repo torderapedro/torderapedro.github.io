@@ -71,8 +71,8 @@ a.button {
 @media (max-width: 700px) {
   .home-container {
     min-height: 80dvh;
-    margin: 0 1rem; /* Margen lateral para móvil */
-    padding: 1.5rem 1rem; /* Padding interior */
+    margin: 0 auto; /* Margen lateral para móvil */
+    padding: 1.5rem 2rem; /* Padding interior */
     justify-content: flex-end;
     align-items: flex-start;
   }
