@@ -81,3 +81,24 @@
 
 /* Oculta el título duplicado en el HTML */
 .card a + .title {
+  display: none;
+}
+
+/* ====================================== */
+/* ESTILOS RESPONSIVOS                    */
+/* ====================================== */
+
+@media (max-width: 700px) {
+  /* Cambios para el contenedor principal y el grid */
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
