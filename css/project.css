@@ -80,10 +80,9 @@
 /* Columna de datos principales */
 .project-details {
   grid-area: details;
-  font-size: clamp(0.8rem, 1vw, 0.95rem);
+  font-size: clamp(0.65rem, 1vw, 0.8rem);
   background: none;
   padding: 0;
-  border-radius: 0.25rem;
   text-align: justify;
   font-weight: 300;
 }
@@ -109,7 +108,7 @@
 /* Miniaturas debajo del carrusel */
 .thumbnails {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 0.5rem;
   margin: 1rem auto 0;
   align-items: center;
