@@ -64,22 +64,13 @@
 }
 
 /* Muestra el título al pasar el cursor (escritorio) o al tocar (móvil) */
-.card:hover .title,
-.card:active .title {
+.card a:hover .title,
+.card a:active .title {
   opacity: 1;
   visibility: visible;
 }
 
-/* Estilos de enlace dentro del título */
-.card .title a,
-.card .title a:visited {
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
-  text-decoration: none;
-}
-
-/* Oculta el título duplicado en el HTML */
+/* Escondemos el título duplicado en el HTML */
 .card a + .title {
   display: none;
 }
