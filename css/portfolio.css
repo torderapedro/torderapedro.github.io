@@ -55,8 +55,8 @@
   visibility: hidden;
   transition: opacity 0.3s ease;
   
-  background: rgba(255, 255, 255, 0.6);
-  color: black;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
   text-align: center;
   font-size: 0.95rem;
   font-weight: 300;
@@ -71,9 +71,9 @@
 /* Estilos de enlace dentro del título */
 .card .title a,
 .card .title a:visited {
-  font-size: 1.1rem; /* Aumentado para mejor legibilidad */
-  font-weight: 600; /* Aumentado para mayor énfasis */
-  color: black;
+  font-size: 0.85rem; /* Aumentado para mejor legibilidad */
+  font-weight: 400;
+  color: white;
   text-decoration: none;
 }
 
