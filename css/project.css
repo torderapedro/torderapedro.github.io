@@ -56,7 +56,7 @@
 /* Columna de descripción */
 .project-description {
   grid-area: description;
-  font-size: 1rem;
+  font-size: 0.75rem;
   padding: 1rem;
   font-weight: 300;
   line-height: 1.6;
@@ -80,7 +80,7 @@
 /* Columna de datos principales */
 .project-details {
   grid-area: details;
-  font-size: 0.95rem;
+  font-size: 0.70rem;
   background: none;
   padding: 1rem;
   border-radius: 0.25rem;
