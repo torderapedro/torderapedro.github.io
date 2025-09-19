@@ -32,7 +32,7 @@
 .main-image-container img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: none; /* Solo la imagen activa se mostrará */
   cursor: pointer;
 }
@@ -248,15 +248,14 @@
   
   .main-image-container {
     width: 100%;
-    height: 18.75rem;
+    height: auto;
+    aspect-ratio: 1 / 1;
     padding-bottom: 100%;
     margin: 0;
   }
   
   .main-image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: static;
   }
   
   .project-info-grid {
