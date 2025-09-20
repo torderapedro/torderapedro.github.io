@@ -64,7 +64,7 @@
   text-align: justify;
   hyphens: auto;
   word-break: normal;
-  opacity: 0.75;
+  opacity: 0.65;
 }
 
 .project-description p {
@@ -87,7 +87,7 @@
   padding: 0;
   text-align: justify;
   font-weight: 300;
-  opacity: 0.75;
+  opacity: 0.65;
 }
 
 .project-details ul {
