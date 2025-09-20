@@ -63,6 +63,10 @@
   font-weight: 300;
 }
 
+.card .title strong {
+  font-weight: 700;
+}
+
 /* Muestra el título al pasar el cursor (escritorio) o al tocar (móvil) */
 .card a:hover .title,
 .card a:active .title {
@@ -93,4 +97,8 @@
     margin: 0 auto;
     gap: 3rem;
   }
+
+  .card .title strong {
+  font-weight: 500;
+}
 }
