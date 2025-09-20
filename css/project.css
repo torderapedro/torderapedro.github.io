@@ -82,7 +82,7 @@
 /* Columna de datos principales */
 .project-details {
   grid-area: details;
-  font-size: clamp(0.65rem, 1vw, 0.8rem);
+  font-size: clamp(0.65rem, 3vw, 0.8rem);
   background: none;
   padding: 0;
   text-align: justify;
