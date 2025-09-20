@@ -68,7 +68,7 @@
 
 .project-description p {
   margin: 0 0 1rem 0;
-  color: rgba (122, 122, 122, 1);
+  color: rgba(122, 122, 122, 1);
 }
 
 /* Imágenes dentro del texto de la descripción */
@@ -94,12 +94,12 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  color: rgba (122, 122, 122, 1);
+  color: rgba(122, 122, 122, 1);
 }
 
 .project-details li {
   margin-bottom: 0.1rem;
-  color: rgba (122, 122, 122, 1);
+  color: rgba(122, 122, 122, 1);
 }
 
 .project-description p strong {
@@ -298,7 +298,7 @@
   
   .project-details li {
     font-size: clamp(0.8rem, 1vw, 1.2rem);
-    color: rgba (0, 0, 0, 0.85);
+    color: rgba(0, 0, 0, 0.85);
   }
   
   .project-details li strong {
