@@ -288,6 +288,7 @@
     line-height: 1.5;
     margin-bottom: 0.5rem;
     font-weight: 300;
+    opacity: 0.65;
   }
   
   .project-description p strong {
@@ -295,7 +296,7 @@
   }
   
   .project-details li {
-    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
     opacity: 0.85;
   }
   
