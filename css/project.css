@@ -108,6 +108,7 @@
 
 .project-details li strong {
   font-weight: 700;
+  color: rgba(77, 77, 77, 1);
 }
 
 /* Miniaturas debajo del carrusel */
