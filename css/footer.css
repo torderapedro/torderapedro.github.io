@@ -5,7 +5,7 @@
 footer {
   margin: 3rem auto 1rem; /* Margen superior | automático para centrar | inferior */
   text-align: center;
-  opacity: 0.7;
+  color: rgba(150, 150, 150, 1);
   font-size: clamp(0.8rem, 1vw, 0.95rem);
   font-weight: 300;
 }
