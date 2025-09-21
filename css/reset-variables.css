@@ -62,7 +62,7 @@ select {
 }
 
 body {
-  font-family: 'Manrope', 'Roboto', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", 'Manrope', sans-serif;
   background-color: var(--bg);
   color: var(--text);
 }
