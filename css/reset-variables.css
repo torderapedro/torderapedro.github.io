@@ -62,7 +62,7 @@ select {
 }
 
 body {
-  font-family: 'Inter', "Noto Sans"/*"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", 'Manrope', sans-serif*/;
+  font-family: 'Inter', Helvetica, Arial, sans-serif*/;
   background-color: var(--bg);
   color: var(--text);
 }
