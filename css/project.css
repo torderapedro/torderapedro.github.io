@@ -290,6 +290,7 @@
     line-height: 1.5;
     margin-bottom: 0.5rem;
     font-weight: 300;
+    color: rgba(77, 77, 77, 1);
   }
   
   .project-description p strong {
