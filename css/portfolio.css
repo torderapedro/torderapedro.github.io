@@ -60,11 +60,11 @@
   color: white;
   text-align: center;
   font-size: 0.95rem;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .card .title strong {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* Muestra el título al pasar el cursor (escritorio) o al tocar (móvil) */
