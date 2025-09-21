@@ -98,6 +98,10 @@
     gap: 3rem;
   }
 
+  .card .title {
+  font-size: 0.85rem; 
+  }
+  
   .card .title strong {
   font-weight: 500;
 }
