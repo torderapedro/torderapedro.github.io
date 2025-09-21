@@ -17,7 +17,7 @@
 /* Título principal */
 .home-container h1 {
   font-size: clamp(1.2rem, 3vw, 2.5rem);
-  font-weight: 900;
+  font-weight: 700;
   margin: 0;
   text-align: justify;
   color: var(--text);
