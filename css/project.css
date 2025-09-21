@@ -6,7 +6,7 @@
 .project-title-main {
   font-size: clamp(0.8rem, 2vw, 1.2rem);
   font-weight: 400;
-  margin: 2rem 0 auto;
+  margin: 2rem auto 0 auto;
   padding: 0 2rem;
   max-width: var(--maxw);
   width: 100%;
@@ -19,7 +19,7 @@
 .project-subtitle-main {
   font-size: clamp(0.7rem, 2vw, 1rem);
   font-weight: 300;
-  margin: 0 1rem auto;
+  margin: 0 auto 1rem auto;
   padding: 0 2rem;
   max-width: var(--maxw);
   width: 100%;
@@ -110,7 +110,7 @@
 }
 
 .project-details li {
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.5rem;
   color: rgba(122, 122, 122, 1);
 }
 
