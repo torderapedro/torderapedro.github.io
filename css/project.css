@@ -311,7 +311,7 @@
     margin-bottom: 0.75rem;
     font-weight: 200;
     color: var(--text77);
-    font-size: clamp(0.8rem, 1vw, 0.9rem);
+    font-size: clamp(0.85rem, 2vw, 0.95rem);
   }
   
   .project-description p strong {
