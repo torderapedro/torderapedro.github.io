@@ -67,7 +67,7 @@
 
 /* Subtítulos dentro del cuerpo del texto */
 .blog-text-container h2 {
-  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 500;
   margin: 2rem 0 1rem;
   color: var(--text77);
@@ -75,7 +75,7 @@
 }
 
 .blog-text-container h3 {
-  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
   font-weight: 500;
   margin: 1.5rem 0 0.8rem;
   color: var(--text77);
