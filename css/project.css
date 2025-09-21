@@ -18,7 +18,7 @@
 
 .project-subtitle-main {
   font-size: clamp(0.7rem, 2vw, 1rem);
-  font-weight: 300;
+  font-weight: 200;
   margin: 0 auto 1rem auto;
   padding: 0 2rem;
   max-width: var(--maxw);
