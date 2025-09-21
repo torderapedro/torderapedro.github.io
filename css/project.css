@@ -267,7 +267,7 @@
   }
 
   .project-subtitle-main {
-    font-size: clamp(0.7rem, 3vw, 1rem);
+    font-size: clamp(0.9rem, 3vw, 1rem);
     margin: 0 1rem 1.5rem 1rem;
     padding: 0 1rem;
     text-align: left;
@@ -342,7 +342,7 @@
   .project-download {
     /* Ajustado para eliminar el margen en móvil */
     padding: 0 1rem;
-    margin: 3rem 0 0 0;
+    margin: 3rem auto 0 auto;
   }
   
   .project-download .button {
