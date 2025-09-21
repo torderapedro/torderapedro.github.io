@@ -67,15 +67,15 @@
 
 /* Subtítulos dentro del cuerpo del texto */
 .blog-text-container h2 {
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
-  font-weight: 600;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  font-weight: 500;
   margin: 2rem 0 1rem;
   color: var(--text77);
   line-height: 1.3;
 }
 
 .blog-text-container h3 {
-  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
   font-weight: 500;
   margin: 1.5rem 0 0.8rem;
   color: var(--text77);
@@ -92,7 +92,7 @@
 /* Citas */
 .blog-text-container blockquote {
   font-style: italic;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
   color: var(--text120);
   border-left: 2px solid var(--text100);
   padding-left: 1rem;
