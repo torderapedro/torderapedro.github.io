@@ -310,7 +310,7 @@
     line-height: 1.5;
     margin-bottom: 0.75rem;
     font-weight: 200;
-    color: var(--text77)
+    color: var(--text77);
     font-size: clamp(0.8rem, 1vw, 0.9rem);
   }
   
