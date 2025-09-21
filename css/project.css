@@ -6,7 +6,7 @@
 .project-title-main {
   font-size: clamp(0.8rem, 2vw, 1.2rem);
   font-weight: 400;
-  margin: 2rem auto;
+  margin: 2rem 0 auto;
   padding: 0 2rem;
   max-width: var(--maxw);
   width: 100%;
@@ -19,7 +19,7 @@
 .project-subtitle-main {
   font-size: clamp(0.7rem, 2vw, 1rem);
   font-weight: 300;
-  margin: 0 auto;
+  margin: 0 1rem auto;
   padding: 0 2rem;
   max-width: var(--maxw);
   width: 100%;
@@ -80,7 +80,7 @@
 
 .project-description p {
   margin: 0 0 1rem 0;
-  color: rgba(122, 122, 122, 1);
+  color: rgba(100, 100, 100, 1);
 }
 
 /* Imágenes dentro del texto de la descripción */
@@ -260,9 +260,15 @@
 /* ====================================== */
 @media (max-width: 700px) {
   .project-title-main {
-    font-size: clamp(1.2rem, 5vw, 1.8rem);
-    /* Ajustado para eliminar el margen en móvil */
-    margin: 2rem 1rem 0.5rem 1rem;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    margin: 2rem 0 0.5rem 1rem;
+    padding: 0 1rem;
+    text-align: left;
+  }
+
+  .project-subtitle-main {
+    font-size: clamp(0.7rem, 3vw, 1.25rem);
+    margin: 0 1rem 0.5rem 1rem;
     padding: 0 1rem;
     text-align: left;
   }
@@ -302,7 +308,7 @@
     line-height: 1.5;
     margin-bottom: 0.5rem;
     font-weight: 300;
-    color: rgba(77, 77, 77, 1);
+    color: rgba(100, 100, 100, 1);
   }
   
   .project-description p strong {
