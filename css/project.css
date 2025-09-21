@@ -267,8 +267,8 @@
   }
 
   .project-subtitle-main {
-    font-size: clamp(0.7rem, 3vw, 1.25rem);
-    margin: 0 1rem 0.5rem 1rem;
+    font-size: clamp(0.7rem, 3vw, 1rem);
+    margin: 0 1rem 1.5rem 1rem;
     padding: 0 1rem;
     text-align: left;
   }
