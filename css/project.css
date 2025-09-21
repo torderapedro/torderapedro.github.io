@@ -18,7 +18,7 @@
 
 .project-subtitle-main {
   font-size: clamp(0.7rem, 2vw, 1rem);
-  font-weight: 200;
+  font-weight: 300;
   margin: 0 auto 1rem auto;
   padding: 0 2rem;
   max-width: var(--maxw);
@@ -69,7 +69,7 @@
 /* Columna de descripción */
 .project-description {
   grid-area: description;
-  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
   padding: 0;
   font-weight: 200;
   line-height: 1.6;
@@ -81,6 +81,7 @@
 .project-description p {
   margin: 0 0 1rem 0;
   color: rgba(100, 100, 100, 1);
+  font-weight: 200;
 }
 
 /* Imágenes dentro del texto de la descripción */
@@ -301,6 +302,7 @@
 
   .project-details {
     margin: 1.5rem 0;
+    font-weight: 200;
   }
   
   .project-description p {
