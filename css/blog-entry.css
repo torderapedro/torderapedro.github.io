@@ -2,9 +2,8 @@
 /* ENTRADAS DE BLOG                       */
 /* ====================================== */
 
-/* Título principal de la entrada */
 .blog-title-main {
-  font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
   font-weight: 500;
   margin: 2rem auto 0 auto;
   padding: 0 2rem;
@@ -24,7 +23,7 @@
   padding: 0 2rem;
   max-width: var(--maxw);
   width: 100%;
-  color: rgba(77, 77, 77, 1);
+  color: var(--text77);
   padding-bottom: 0.1875rem;
   hyphens: auto;
   word-break: normal;
