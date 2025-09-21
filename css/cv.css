@@ -19,14 +19,15 @@
 /* Títulos de secciones */
 .cv-section-title {
   display: block;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.4px;
-  color: var(--black); /* Usando la variable --black */
+  color: var(--black);
   margin: 2rem 0 1rem;
   position: relative;
 }
+
 .cv-section-title::after {
   content: "";
   display: block;
@@ -39,10 +40,10 @@
 .cv-section-title-grades {
   display: block;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.4px;
-  color: var(--text-light); /* Usando la variable --text-light */
+  color: var(--text77);
   margin: 2rem 0 1rem;
   position: relative;
 }
@@ -50,10 +51,10 @@
 .cv-other-interests {
   font-size: 0.8rem;
   line-height: 1.6;
-  color: var(--text-light); /* Usando la variable --text-light */
+  color: var(--text77);
   margin-bottom: 1.5rem;
   text-align: justify;
-  font-weight: 300
+  font-weight: 200
 }
 
 /* Estilo de links */
@@ -81,18 +82,18 @@
   font-weight: 300;
   font-size: 0.8rem;
   font-style: italic;
-  color: var(--text-light); 
+  color: var(--text120); 
 }
 .cv-desc {
   text-align: justify;
   font-size: 0.9rem;
   line-height: 1.6;
-  color: var(--text-light);
-  font-weight: 300;
+  color: var(--text77);
+  font-weight: 200;
 }
 
 .cv-desc strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Skills */
@@ -101,8 +102,8 @@
   display: block;
   font-size: 0.8rem;
   margin-bottom: 0.35rem;
-  color: var(--text-light); /* Usando la variable --text-light */
-  font-weight: 300
+  color: var(--text77);
+  font-weight: 200
 }
 .bar {
   background: #eee;
@@ -111,7 +112,7 @@
   overflow: hidden;
 }
 .fill {
-  background: #666; /* Considerar usar una variable, como var(--secondary) */
+  background: rgba(160, 160, 160, 1);
   height: 100%;
   width: 0;
 }
@@ -122,20 +123,20 @@
   grid-template-columns: 1fr auto; /* primera flexible, segunda lo justo */
   gap: 1rem;
   font-size: 0.80rem;
-  color: var(--text-light); /* Usando la variable --text-light */
+  color: var(--text77); /* Usando la variable --text-light */
   padding: 0.2rem 0;
 }
 
 /* Columna de asignatura */
 .cv-grade .subject {
   text-align: left;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 /* Columna de nota */
 .cv-grade .mark {
   justify-self: end;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* Botón de descarga */
@@ -146,7 +147,7 @@
 .cv-download .button {
   display: inline-block;
   padding: 0.5rem 1rem;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.95rem;
   text-decoration: none;
   color: var(--text);
@@ -177,11 +178,9 @@
     text-align: left;
     margin-bottom: 0.3rem;
     font-size: 0.75rem;
-    color: #555;
   }
   .cv-desc {
     text-align: justify;
     font-size: 0.85rem;
-    opacity: 0.85;
   }
 }
