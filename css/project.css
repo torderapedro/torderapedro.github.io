@@ -342,7 +342,7 @@
     /* Ajustado para eliminar el margen en móvil */
     padding: 0 1rem;
     margin: 3rem auto 0 auto;
-    max-width: var(--maxw);
+    /*max-width: var(--maxw);*/
   }
   
   .project-download .button {
