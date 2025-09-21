@@ -62,7 +62,7 @@ select {
 }
 
 body {
-  font-family: Helvetica, 'Roboto', sans-serif;
+  font-family: 'Manrope', 'Roboto', sans-serif;
   background-color: var(--bg);
   color: var(--text);
 }
