@@ -4,14 +4,13 @@
 
 /* Título de sección */
 .project-title-main {
-  font-size: clamp(1.2rem, 2vw, 2rem);
-  font-weight: 700;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  font-weight: 600;
   margin: 2rem auto;
   padding: 0 2rem;
   max-width: var(--maxw);
   width: 100%;
   color: var(--text);
-  display: inline-block;
   padding-bottom: 0.1875rem;
   hyphens: auto;
   word-break: normal;
