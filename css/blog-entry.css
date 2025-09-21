@@ -1,108 +1,142 @@
 /* ====================================== */
-/* ENTRADAS DE BLOG                       */
+/* ENTRADAS DE BLOG                       */
 /* ====================================== */
 
-/* Título principal */
+/* Título principal de la entrada */
 .blog-title-main {
-  font-size: clamp(1.4rem, 3vw, 2.5rem);
-  font-weight: 700;
-  margin: 2rem 0 1rem;
-  padding: 0; /* Eliminar el padding para que el border-bottom ocupe todo el ancho */
-  color: var(--text);
-  border-bottom: 0.125rem solid var(--text-light);
-  display: inline-block;
-  padding-bottom: 0.2rem;
-  hyphens: auto;
-  word-break: normal;
-  line-height: 1.3;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  font-weight: 500;
+  margin: 2rem auto 0 auto;
+  padding: 0 2rem;
+  max-width: var(--maxw);
+  width: 100%;
+  color: var(--text);
+  padding-bottom: 0.1875rem;
+  hyphens: auto;
+  word-break: normal;
 }
 
-/* Imagen principal */
+/* Subtítulo principal de la entrada (si aplica) */
+.blog-subtitle-main {
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  font-weight: 300;
+  margin: 0 auto 1rem auto;
+  padding: 0 2rem;
+  max-width: var(--maxw);
+  width: 100%;
+  color: rgba(77, 77, 77, 1);
+  padding-bottom: 0.1875rem;
+  hyphens: auto;
+  word-break: normal;
+}
+
+/* Contenedor principal de la imagen */
 .blog-main-image {
-  width: 100%;
-  max-width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  border-radius: 4px;
-  margin: 1.5rem 0;
+  width: 100%;
+  max-width: var(--maxw);
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 1.5rem auto;
+  padding: 0 2rem;
+  display: block;
 }
 
-/* Contenedor general */
-.blog-content-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 1rem;
+/* Contenedor general del texto de la entrada */
+.blog-text-container {
+  max-width: var(--maxw);
+  margin: 4rem auto;
+  padding: 0 2rem;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  font-weight: 200;
+  line-height: 1.8;
+  text-align: justify;
+  hyphens: auto;
+  word-break: normal;
 }
 
-/* Texto de la entrada */
-.blog-text {
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.7;
-  color: var(--text);
-  text-align: justify;
-  hyphens: auto;
-  word-break: normal;
+/* Párrafos */
+.blog-text-container p {
+  margin-bottom: 1rem;
+  color: rgba(100, 100, 100, 1);
+  font-weight: 200;
 }
 
-.blog-text p {
-  margin-bottom: 1.2rem;
+/* Negritas en párrafos */
+.blog-text-container p strong {
+  font-weight: 500;
 }
 
-/* Subtítulos */
-.blog-text h2 {
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
-  font-weight: 600;
-  margin: 2rem 0 1rem;
-  color: var(--text);
-  line-height: 1.3;
+/* Subtítulos dentro del cuerpo del texto */
+.blog-text-container h2 {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  color: var(--text);
+  line-height: 1.3;
 }
 
-.blog-text h3 {
-  font-size: clamp(1rem, 1.8vw, 1.4rem);
-  font-weight: 600;
-  margin: 1.5rem 0 0.8rem;
-  color: var(--text);
+.blog-text-container h3 {
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  font-weight: 600;
+  margin: 1.5rem 0 0.8rem;
+  color: var(--text);
 }
 
-/* Imágenes dentro del artículo */
-.blog-text img {
-  width: 100%;
-  border-radius: 4px;
-  margin: 1rem 0;
-  object-fit: cover;
+/* Imágenes dentro del texto */
+.blog-text-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+  border-radius: 4px;
 }
 
-/* Citas dentro del texto */
-.blog-text blockquote {
-  font-style: italic;
-  font-size: 0.95rem;
-  color: var(--text-light);
-  border-left: 3px solid var(--text-light);
-  padding-left: 1rem;
-  margin: 1.5rem 0;
+/* Citas */
+.blog-text-container blockquote {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-light);
+  border-left: 3px solid var(--text-light);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
 }
 
 /* ====================================== */
-/* Estilos para móviles (Responsive)      */
+/* Estilos para móviles (Responsive)      */
 /* ====================================== */
 @media (max-width: 700px) {
-  .blog-title-main {
-    font-size: clamp(1.2rem, 5vw, 1.8rem);
-    padding: 0;
-    margin: 2rem 0 0.5rem 0;
-  }
-  
-  .blog-content-container {
-    padding: 0 2rem;
-  }
-  
-  .blog-text {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-  
-  .blog-text h2 {
-    font-size: clamp(1.1rem, 4vw, 1.4rem);
-  }
+  .blog-title-main {
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    margin: 2rem 0 0 1rem;
+    padding: 0 1rem;
+    text-align: left;
+  }
+  
+  .blog-subtitle-main {
+    font-size: clamp(0.85rem, 3vw, 1rem);
+    margin: 0 1rem 1.5rem 1rem;
+    padding: 0 1rem;
+    text-align: left;
+  }
+  
+  .blog-main-image {
+    max-width: 100vw;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+  }
+  
+  .blog-text-container {
+    max-width: 100vw;
+    margin: 1rem 1rem;
+    padding: 0 1rem;
+  }
+  
+  .blog-text-container p {
+    font-weight: 200;
+    color: var(--text77);
+    font-size: clamp(0.85rem, 2vw, 0.95rem);
+  }
 }
