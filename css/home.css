@@ -16,7 +16,7 @@
 
 /* Título principal */
 .home-container h1 {
-  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  font-size: clamp(1.2rem, 3vw, 2.1rem);
   font-weight: 700;
   margin: 0;
   text-align: justify;
@@ -25,24 +25,23 @@
 
 /* Subtítulo */
 .home-container .subtitle {
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.4rem);
   font-weight: 400;
   color: var(--text);
   text-align: justify;
-  margin: -0.2rem 0 0.5rem 0;
+  margin: -0.5rem 0 0.5rem 0;
 }
 
 /* Texto introductorio */
 .home-container .lead {
   font-size: clamp(0.8rem, 2vw, 1rem);
-  opacity: 0.65;
   margin-bottom: 0.5rem;
   font-style: italic;
   text-align: justify;
   font-weight: 300;
   hyphens: auto;
   word-break: normal;
-  color: var(--text);
+  color: var(--text77);
 }
 
 /* Botones en inicio */
@@ -62,7 +61,7 @@ a.button {
   padding: 0.5rem 0.9rem;
   font-size: 0.95rem;
   color: var(--text);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* ====================================== */
@@ -94,6 +93,5 @@ a.button {
 
   .lead {
     font-size: clamp(0.8rem, 3vw, 1.2rem);
-    opacity: 0.85;
   }
 }
