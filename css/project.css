@@ -18,7 +18,7 @@
 
 .project-subtitle-main {
   font-size: clamp(0.7rem, 2vw, 1rem);
-  font-weight: 200;
+  font-weight: 300;
   margin: 0 auto 1rem auto;
   padding: 0 2rem;
   max-width: var(--maxw);
@@ -116,11 +116,11 @@
 }
 
 .project-description p strong {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .project-details li strong {
-  font-weight: 700;
+  font-weight: 500;
   color: rgba(77, 77, 77, 1);
 }
 
@@ -160,7 +160,7 @@
 
 .project-download .button {
   padding: 0.5rem 1rem;
-  font-weight: 400;
+  font-weight: 500;
   font-size: clamp(0.9rem, 1.2vw, 1rem);
   text-decoration: none;
   color: var(--text);
@@ -172,7 +172,7 @@
   color: var(--black);
 }
 
-/* Estilo de links (desde el CV, fusionado aquí para el proyecto) */
+/* Estilo de links */
 .cv-desc a.no-style-link:link,
 .cv-desc a.no-style-link:visited {
   color: inherit;
