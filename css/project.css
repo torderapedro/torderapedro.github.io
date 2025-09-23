@@ -84,6 +84,13 @@
   font-weight: 200;
 }
 
+.project-description h2 {
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+  font-weight: 500;
+  margin: 1.5rem 0 0.8rem;
+  color: var(--text77);
+}
+
 /* Imágenes dentro del texto de la descripción */
 .project-description img {
   max-width: 100%;
