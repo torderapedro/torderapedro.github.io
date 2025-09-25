@@ -32,7 +32,7 @@
 .project-construction-title {
   font-size: clamp(1.25rem, 2vw, 1.6rem);
   font-weight: 700;
-  margin: 7rem auto 0 auto;
+  margin: 40vh auto 0 auto;
   padding: 0 2rem;
   max-width: var(--maxw);
   width: 100%;
