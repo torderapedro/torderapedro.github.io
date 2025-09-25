@@ -301,6 +301,10 @@
     padding: 0 1rem;
     text-align: left;
   }
+
+  .project-construction-title {
+    margin: 25vh auto 0 auto;
+  }
   
   .main-image-container {
     max-width: 100vw;
