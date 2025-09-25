@@ -29,6 +29,30 @@
   word-break: normal;
 }
 
+.project-construction-title {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-weight: 600;
+  margin: 5rem auto 0 auto;
+  padding: 0 2rem;
+  max-width: var(--maxw);
+  width: 100%;
+  color: var(--text);
+  padding-bottom: 0.1875rem;
+  text-align: center;
+}
+
+.project-construction-subtitle {
+  font-size: clamp(0.7rem, 1vw, 1rem);
+  font-weight: 300;
+  margin: 2rem auto 0 auto;
+  padding: 0 2rem;
+  max-width: var(--maxw);
+  width: 100%;
+  color: var(--text);
+  padding-bottom: 0.1875rem;
+  text-align: center;
+}
+
 /* Contenedor principal de imagen (carrusel) */
 .main-image-container {
   position: relative;
