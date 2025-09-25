@@ -30,9 +30,9 @@
 }
 
 .project-construction-title {
-  font-size: clamp(1rem, 2vw, 1.4rem);
-  font-weight: 600;
-  margin: 5rem auto 0 auto;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-weight: 700;
+  margin: 7rem auto 0 auto;
   padding: 0 2rem;
   max-width: var(--maxw);
   width: 100%;
@@ -42,15 +42,12 @@
 }
 
 .project-construction-subtitle {
-  font-size: clamp(0.7rem, 1vw, 1rem);
-  font-weight: 300;
-  margin: 2rem auto 0 auto;
-  padding: 0 2rem;
-  max-width: var(--maxw);
-  width: 100%;
-  color: var(--text);
-  padding-bottom: 0.1875rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  margin-bottom: 0.5rem;
+  font-style: italic;
   text-align: center;
+  font-weight: 200;
+  color: var(--text77);
 }
 
 /* Contenedor principal de imagen (carrusel) */
