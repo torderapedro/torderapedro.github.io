@@ -6,15 +6,18 @@
   <title>Blog — Pedro Tordera Arillo</title>
   <meta name="description" content="Blog of Pedro Tordera Arillo — Articles and reflections on architecture and projects.">
 
-  <!-- Shared styles -->
-  <link rel="stylesheet" href="../css/reset-variables.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/grid-cards.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/reset-variables.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
+
+  
 <body>
-  <!-- Top menu -->
   <header>
     <a href="home.html">Home</a>
     <a href="cv.html">CV</a>
@@ -24,63 +27,43 @@
   </header>
 
   <main class="container">
-    
-    <!-- Blog entries grid -->
-    <div class="grid">
+        
+        <div class="grid">
 
-      <!-- Entry 1 -->
-      <article class="card blog-card">
-        <a href="../en/entries/entry.html">
-          <img src="../blog/bibliokepos.jpg" alt="Resilient City">
-        </a>
-        <div class="blog-content">
-          <h2 class="title">
-            <a href="../en/entries/entry.html">Web Page</a>
-          </h2>
-          <p class="excerpt">
-            Urban resilience is key to facing climate and social challenges. This article analyzes strategies
-            for a more livable and sustainable city...
-          </p>
+            <article class="card">
+                <a href="../en/blog/entry.html">
+                    <img src="/es/blog/miniaturas/03.webp" alt="01">
+                    <div class="title">
+                    <span><strong>Agricultural city</strong> </span>
+                        <span>Exploring Japanese metabolism and its application at the neighborhood scale</span>
+                    </div>
+                </a>
+            </article>
+
+             <article class="card">
+                <a href="../es/blog/entry.html">
+                    <img src="/es/blog/miniaturas/02.webp" alt="02">
+                    <div class="title">
+                    <span><strong>Katsura Villa</strong> </span>
+                        <span>Studying greatness</span>
+                    </div>
+                </a>
+            </article>
+
+             <article class="card">
+                <a href="../es/blog/entry.html">
+                    <img src="/es/blog/miniaturas/01.webp" alt="01">
+                    <div class="title">
+                    <span><strong>Web page</strong> </span>
+                        <span>Programming, construction and design of a portfolio web page</span>
+                    </div>
+                </a>
+            </article>
         </div>
-      </article>
+    </main>
 
-      <!-- Entry 2 -->
-      <article class="card blog-card">
-        <a href="../en/entries/entry.html">
-          <img src="../blog/infraestructura-situada.jpg" alt="Circular Materials">
-        </a>
-        <div class="blog-content">
-          <h2 class="title">
-            <a href="../en/entries/entry.html">Circular Materials</a>
-          </h2>
-          <p class="excerpt">
-            Discover how circular design transforms construction, reducing waste and promoting
-            reuse in the architectural industry...
-          </p>
-        </div>
-      </article>
-
-      <!-- Entry 3 -->
-      <article class="card blog-card">
-        <a href="../en/entries/entry.html">
-          <img src="../blog/buen-habitar.jpg" alt="Flexible Housing">
-        </a>
-        <div class="blog-content">
-          <h2 class="title">
-            <a href="../en/entries/entry.html">Towards Flexible Living</a>
-          </h2>
-          <p class="excerpt">
-            Housing must adapt to the changing needs of its inhabitants. We explore
-            design strategies for flexible and sustainable spaces...
-          </p>
-        </div>
-      </article>
-
-    </div>
-  </main>
-
-  <footer>
-    2025 © Pedro Tordera Arillo
-  </footer>
+    <footer>
+        2025 © Pedro Tordera Arillo
+    </footer>
 </body>
 </html>
