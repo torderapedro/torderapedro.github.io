@@ -137,6 +137,10 @@
     padding: 0rem;
     text-align: left;
   }
+
+  .project-construction-title {
+    margin: 25vh auto 0 auto;
+  }
   
   .blog-main-image {
     max-width: 100vw;
