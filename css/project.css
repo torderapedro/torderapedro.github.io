@@ -156,6 +156,18 @@
   color: rgba(77, 77, 77, 1);
 }
 
+.project-details a.no-style-link:link,
+.project-details a.no-style-link:visited {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+}
+.project-details a.no-style-link:hover,
+.project-details a.no-style-link:active {
+  color: var(--black);  
+  text-decoration: underline;
+}
+
 /* Miniaturas debajo del carrusel */
 .thumbnails {
   display: grid;
